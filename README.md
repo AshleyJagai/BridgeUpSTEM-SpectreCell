@@ -1,6 +1,6 @@
 # BridgeUp-Ghost
 
-![alt text][logo]
+![alt text][logo =250x]
 
 [logo]: http://www.jedinews.co.uk/wp-content/uploads/2018/01/forces-of-destiny-comic-hera.jpg "Ghost"
 
