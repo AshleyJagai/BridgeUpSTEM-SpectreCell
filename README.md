@@ -1,6 +1,6 @@
 # BridgeUp-Ghost
 
-<div style="text-align:center; width: 100%">
+<div style="text-align: center">
   <img src="http://www.jedinews.co.uk/wp-content/uploads/2018/01/forces-of-destiny-comic-hera.jpg" width="450px" alt="Ghost" align="middle">
 </div>
 
