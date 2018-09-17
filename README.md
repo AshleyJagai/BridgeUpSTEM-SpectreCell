@@ -10,16 +10,16 @@ The Ghost is a starship piloted by Hera Syndulla, the pragmatic leader of a grou
 ## Schedule
   | Day | Date        | Weekday | Lessons     | Labs        |
   |:---:|:-----------:|:-------:|:-----------:|:-----------:|
-  | d1  |October 9 |Tuesday | [Intro, Expectations, Culture and Success](weekly_code/d1/lessons/1.Intro.md), [GitHub](weekly_code/d1/lessons/2.Github.md)| [First Lab: Intro, Culture and Success](weekly_code/d1/labs)|
-  | d2  |October 11 |Thursday | [](weekly_code/d2/lessons)| [](weekly_code/d2/labs)|
-  | d3  |October 16 |Tuesday | [](weekly_code/d3/lessons)| [](weekly_code/d3/labs)|
-  | d4  |October 18 |Thursday | [](weekly_code/d4/lessons)| [](weekly_code/d4/labs)|
-  | d5  |October 23 |Tuesday | [](weekly_code/d5/lessons)| [](weekly_code/d5/labs)|
-  | d6  |October 25 |Thursday | [](weekly_code/d6/lessons)| [](weekly_code/d6/labs)|
-  | d7  |October 30 |Tuesday | [](weekly_code/d7/lessons)| [](weekly_code/d7/labs)|
-  | d8  |November 1 |Thursday | [](weekly_code/d8/lessons)| [](weekly_code/d8/labs)|
+  | d1  |October 9 |Tuesday | [Intro, Expectations, Culture and Success](weekly_code/d01/lessons/1.Intro.md), [GitHub](weekly_code/d01/lessons/2.Github.md)| [First Lab: Intro, Culture and Success](weekly_code/d01/labs)|
+  | d2  |October 11 |Thursday | [](weekly_code/d02/lessons)| [](weekly_code/d02/labs)|
+  | d3  |October 16 |Tuesday | [](weekly_code/d03/lessons)| [](weekly_code/d03/labs)|
+  | d4  |October 18 |Thursday | [](weekly_code/d04/lessons)| [](weekly_code/d04/labs)|
+  | d5  |October 23 |Tuesday | [](weekly_code/d05/lessons)| [](weekly_code/d05/labs)|
+  | d6  |October 25 |Thursday | [](weekly_code/d06/lessons)| [](weekly_code/d06/labs)|
+  | d7  |October 30 |Tuesday | [](weekly_code/d07/lessons)| [](weekly_code/d07/labs)|
+  | d8  |November 1 |Thursday | [](weekly_code/d08/lessons)| [](weekly_code/d08/labs)|
   | d9  |November 6 |Tuesday | **No Session Today** |
-  | d10 |November 8 |Thursday | [](weekly_code/d10/lessons)| [](weekly_code/d10/labs)|
+  | d010 |November 8 |Thursday | [](weekly_code/d10/lessons)| [](weekly_code/d10/labs)|
   | d11 |November 13 |Tuesday | [](weekly_code/d11/lessons)| [](weekly_code/d11/labs)|
   | d12 |November 15 |Thursday | [](weekly_code/d12/lessons)| [](weekly_code/d12/labs)|
   | d13 |November 20 |Tuesday | [](weekly_code/d13/lessons)| [](weekly_code/d13/labs)|
