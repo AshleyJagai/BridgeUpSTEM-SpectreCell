@@ -1,1 +1,1 @@
-# BridgeUp-astro
+# BridgeUp-Ghost
