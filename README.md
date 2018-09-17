@@ -8,7 +8,7 @@ The Ghost is a starship piloted by Hera Syndulla, the pragmatic leader of a grou
 
 
 ## Schedule
-<p align="center">
+
   | Day | Date        | Weekday | Lessons     | Labs        |
   |:---:|:-----------:|:-------:|:-----------:|:-----------:|
   | d1  |October 9 |Tuesday | [Intro, Expectations, Culture and Success](./d1/lessons)| [First Lab](./d1/labs)|
@@ -23,5 +23,3 @@ The Ghost is a starship piloted by Hera Syndulla, the pragmatic leader of a grou
   | d10  |October 9 |Tuesday | [Intro, Expectations, Culture and Success](./d10/lessons)| [First Lab](./d10/labs)|
   | d11  |October 9 |Tuesday | [Intro, Expectations, Culture and Success](./d11/lessons)| [First Lab](./d11/labs)|
   | d12  |October 9 |Tuesday | [Intro, Expectations, Culture and Success](./d12/lessons)| [First Lab](./d12/labs)|
-
-</p>
