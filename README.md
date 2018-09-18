@@ -1,6 +1,6 @@
 # BridgeUp-Ghost
 
-<div style="display:inline-block">
+<div>
   <div>
 ### Team Members
   <!-- Add your name below this line -->
@@ -12,7 +12,7 @@
   - student 6
   <!-- names above this line -->
   </div>
-  <p align="center">
+  <p style="float-right">
     <img  src="http://www.jedinews.co.uk/wp-content/uploads/2018/01/forces-of-destiny-comic-hera.jpg" width="550px" alt="Ghost">
   </p>
 </div>
