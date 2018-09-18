@@ -24,20 +24,6 @@ Numerous undergraduate and graduate students have participated in research led b
 
 # Communication
 
-## Micro Feedback
-
-This is a chance to let me know how you're feeling every day!
-
-- Micro Feedback will be given daily
-- Use this opportunity to say how you're doing and how your experience can be improved
-- Comfort Zone, Learning Zone, Panic Zone
-
-
-<p align="center">
-  <img src="http://theagilepirate.net/wp-content/uploads/Learning.jpg" width="550px" alt="Learning Zone">
-</p>
-
-
 ## Communication Tools
 
 ### Slack
@@ -59,6 +45,20 @@ Will be updated before each meeting with new content.
 ### Virtual Meetings
 
 When necessary, we'll be meeting online with Zoom or Google Hangouts. We'll also use this for any guest speakers that can't make it in.
+
+## Micro Feedback
+
+This is a chance to let me know how you're feeling every day!
+
+- Micro Feedback will be given daily
+- Use this opportunity to say how you're doing and how your experience can be improved
+- Comfort Zone, Learning Zone, Panic Zone
+
+
+<p align="center">
+  <img src="http://theagilepirate.net/wp-content/uploads/Learning.jpg" width="550px" alt="Learning Zone">
+</p>
+
 
 <hr>
 
