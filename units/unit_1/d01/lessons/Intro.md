@@ -112,15 +112,15 @@ Shut down computers and clean up work space.
  <hr>
 
 ## ICEBREAKER!
-- Tell us about you!
+
+- Two truths and a lie
+  - take 5 mins to create a poll on slack, but don't send it yet!
+  
+- Tell us about yourself
   - your name
   - where are you from?
   - prior experience with coding/science?
   - future goals? (short-term? long-term?)
   - what is the last thing you purchased online?
-
-- Two truths and a lie
-  - take 5 mins to create a poll on slack, but don't send it yet!
-
 
 <hr>
