@@ -1,17 +1,17 @@
-# BridgeUp-Ghost
+# BridgeUp-SpectreCell
 
 
 <p align="center">
-  <img  src="http://www.jedinews.co.uk/wp-content/uploads/2018/01/forces-of-destiny-comic-hera.jpg" width="550px" alt="Ghost">
+  <img  src="https://vignette.wikia.nocookie.net/starwars/images/1/17/KananCrew.png/revision/latest?cb=20140808024633" width="600px" alt="Ghost">
 </p>
 
-Ghost is a starship piloted by Hera Syndulla, the pragmatic leader of a small group of rebels in Star Wars: Rebels. Hera is an ace engineer, fearless pilot, and amazing strategist in the noble fight against the Galactic Empire. Eventually promoted to the rank of General, Hera directly contributed to the development and success of the Rebel Alliance by becoming one of the first cells to join upon its formation.
+The Spectre Cell, also known as the Ghost Crew or the Spectres, is made up of a small group of rebels that were key in the downfall of the Galactic Empire. They were led by ace engineer, fearless pilot, and amazing strategist Hera Syndulla on her starship, the Ghost. The Spectre Cell's persistence and eventual influence directly contributed to the development and success of the Rebel Alliance by becoming one of the first cells to join upon its formation.
 
 <hr>
 
 ### Team Members
 <!-- Add your name below this line -->
-- 
+-
 -
 -
 -
@@ -29,7 +29,7 @@ Ghost is a starship piloted by Hera Syndulla, the pragmatic leader of a small gr
   | Day | Date        | Weekday | Lessons     | Labs        |
   |:---:|:-----------:|:-------:|:-----------:|:-----------:|
   | d1  |October 9 |Tuesday | [Introduction, Culture, Communication, and Expectations](units/unit_1/d01/lessons/Intro.md)| [Git and Github: Keeping track of your files](units/unit_1/d01/labs/Github.md)|
-  | d2  |October 11 |Thursday | [](units/unit_1/d02/lessons)| [](units/unit_1/d02/labs)|
+  | d2  |October 11 |Thursday | [BDNYC and BDNYCDB](units/unit_1/d02/lessons)| [](units/unit_1/d02/labs)|
   | d3  |October 16 |Tuesday | [](units/unit_1/d03/lessons)| [](units/unit_1/d03/labs)|
   | d4  |October 18 |Thursday | [](units/unit_1/d04/lessons)| [](units/unit_1/d04/labs)|
   | d5  |October 23 |Tuesday | [](units/unit_1/d05/lessons)| [](units/unit_1/d05/labs)|
