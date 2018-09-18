@@ -4,13 +4,15 @@
   <img  src="http://www.jedinews.co.uk/wp-content/uploads/2018/01/forces-of-destiny-comic-hera.jpg" width="550px" alt="Ghost">
 </p>
 
-The Ghost is a starship piloted by Hera Syndulla, the pragmatic leader of a group of rebels in Star Wars: Rebels. Hera is a fearless pilot, ace engineer, and amazing strategist in the noble fight against the Galactic Empire.
+Ghost is a starship piloted by Hera Syndulla, the pragmatic leader of a small group of rebels in Star Wars: Rebels. Hera is an ace engineer, fearless pilot, and amazing strategist in the noble fight against the Galactic Empire. Eventually promoted to the rank of General, Hera directly contributed to the development and success of the Rebel Alliance by becoming one of the first cells to join upon its formation.
 
 
 ## Schedule
+
+### Unit 1
   | Day | Date        | Weekday | Lessons     | Labs        |
   |:---:|:-----------:|:-------:|:-----------:|:-----------:|
-  | d1  |October 9 |Tuesday | [Intro, Expectations, Culture and Success](weekly_code/d01/lessons/1.Intro.md), [GitHub](weekly_code/d01/lessons/2.Github.md)| [First Lab: Intro, Culture and Success](weekly_code/d01/labs)|
+  | d1  |October 9 |Tuesday | [Intro, Expectations, Culture and Success](weekly_code/d01/lessons/Intro.md)| [[GitHub](weekly_code/d01/labs/Github.md)|
   | d2  |October 11 |Thursday | [](weekly_code/d02/lessons)| [](weekly_code/d02/labs)|
   | d3  |October 16 |Tuesday | [](weekly_code/d03/lessons)| [](weekly_code/d03/labs)|
   | d4  |October 18 |Thursday | [](weekly_code/d04/lessons)| [](weekly_code/d04/labs)|
@@ -19,6 +21,10 @@ The Ghost is a starship piloted by Hera Syndulla, the pragmatic leader of a grou
   | d7  |October 30 |Tuesday | [](weekly_code/d07/lessons)| [](weekly_code/d07/labs)|
   | d8  |November 1 |Thursday | [](weekly_code/d08/lessons)| [](weekly_code/d08/labs)|
   | d9  |November 6 |Tuesday | **No Session Today** |
+
+### Unit 2
+  | Day | Date        | Weekday | Lessons     | Labs        |
+  |:---:|:-----------:|:-------:|:-----------:|:-----------:|
   | d010 |November 8 |Thursday | [](weekly_code/d10/lessons)| [](weekly_code/d10/labs)|
   | d11 |November 13 |Tuesday | [](weekly_code/d11/lessons)| [](weekly_code/d11/labs)|
   | d12 |November 15 |Thursday | [](weekly_code/d12/lessons)| [](weekly_code/d12/labs)|
@@ -33,6 +39,10 @@ The Ghost is a starship piloted by Hera Syndulla, the pragmatic leader of a grou
   | d21 |December 18 |Tuesday | [](weekly_code/d21/lessons)| [](weekly_code/d21/labs)|
   | d22 |December 20 |Thursday | **Winter Presentations** |
   |  |December 25 - January 1 | | **Winter Recess** |
+
+### Unit 3
+  | Day | Date        | Weekday | Lessons     | Labs        |
+  |:---:|:-----------:|:-------:|:-----------:|:-----------:|
   | d23  |January 3 |Thursday | [](weekly_code/d23/lessons)| [](weekly_code/d23/labs)|
   | d24  |January 8 |Tuesday | [](weekly_code/d24/lessons)| [](weekly_code/d24/labs)|
   | d25  |January 10 |Thursday | [](weekly_code/d25/lessons)| [](weekly_code/d25/labs)|
@@ -50,6 +60,10 @@ The Ghost is a starship piloted by Hera Syndulla, the pragmatic leader of a grou
   |  |February 18 - February 22 | | **Mid-Winter Recess** |
   | d36 |February 26 |Tuesday | **Resume Building Workshop** |
   | d37 |February 28 |Thursday | **HTML/CSS Workshop** |
+
+### Unit 4
+  | Day | Date        | Weekday | Lessons     | Labs        |
+  |:---:|:-----------:|:-------:|:-----------:|:-----------:|
   | d38 |March 5 |Tuesday | [](weekly_code/d38/lessons)| [](weekly_code/d38/labs)|
   | d39 |March 7 |Thursday | [](weekly_code/d39/lessons)| [](weekly_code/d39/labs)|
   | d40 |March 12 |Tuesday | [](weekly_code/d40/lessons)| [](weekly_code/d40/labs)|
@@ -60,6 +74,10 @@ The Ghost is a starship piloted by Hera Syndulla, the pragmatic leader of a grou
   | d45 |March 28 |Thursday | [](weekly_code/d45/lessons)| [](weekly_code/d45/labs)|
   | d46 |April 2 |Tuesday | [](weekly_code/d46/lessons)| [](weekly_code/d46/labs)|
   | d47 |April 4 |Thursday | **Cluster Training** |
+
+### Unit 5
+  | Day | Date        | Weekday | Lessons     | Labs        |
+  |:---:|:-----------:|:-------:|:-----------:|:-----------:|
   | d48 |April 9 |Tuesday | [](weekly_code/d48/lessons)| [](weekly_code/d48/labs)|
   | d49 |April 11 |Thursday | [](weekly_code/d49/lessons)| [](weekly_code/d49/labs)|
   | d50 |April 16 |Tuesday | [](weekly_code/d50/lessons)| [](weekly_code/d50/labs)|

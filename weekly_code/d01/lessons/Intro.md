@@ -44,7 +44,16 @@ This is a chance to let me know how you're feeling every day!
 
 #### Team Channel
 
- - bridgeup-ghost
+ - `bridgeup-ghost`
+
+
+### Github
+
+Will be updated before each meeting with new content.
+
+- [Internship schedule](https://github.com/colleencleary/BridgeUp-Ghost)
+- Lessons and Activities
+  - Formatted as a markdown file. Follow along with Terminal and Jupyter Notebook
 
 
 ### Virtual Meetings
@@ -54,20 +63,64 @@ When necessary, we'll be meeting online with Zoom or Google Hangouts. We'll also
 <hr>
 
 # Expectations
- - Meet twice a week from 4:30pm-6:30pm
+ - Be present and active from 4:30pm-6:30pm on Tuesdays/Thursdays
  - Let someone know if you're running late/will be absent
  - Use laptop to follow markdowns and work on code
  - Keep a research notebook
+ - Take a bathroom break whenever you need one (just let us know you're stepping out)
+ - Pictures will be taken (let me know if you are not okay with this)(I promise to try to get your best angle XD )
+ - Eating/drinking is fine
+ - Clean up after yourself (and others if needed) -- don't be a jerk!
  - Respond to Micro Feedback and polls
  - Ask for help!
  - Follow the "golden rule"
+
+# Meeting Overview
+This is what a typical meeting will look like.
+
+#### 4:30pm: Welcome!
+
+Meet in the Den. Give yourself extra time for train delays
+
+#### 4:30-4:45pm: Cheers and Challenges
+
+Group interaction for first 15 minutes
+
+#### 4:45pm: Head to Department
+
+Grab laptops and head to meeting space (TBD)
+
+#### 4:45-4:50pm: Set-Up
+
+Open computers and pull from upstream for updates
+
+#### 4:50-5:10pm: Main Lesson
+
+Review markdown
+
+#### 5:10-6:20pm: Lab
+
+Work together, individually, or in small groups on activities.
+
+Challenge yourself!: Try to work through problems without help for first 30 minutes
+
+#### 6:20-6:30pm: Clean-Up
+
+Shut down computers and clean up work space.
 
 
  <hr>
 
 ## ICEBREAKER!
+- Tell us about you!
+  - your name
+  - where are you from?
+  - prior experience with coding/science?
+  - future goals? (short-term? long-term?)
+  - what is the last thing you purchased online?
 
-Two truths and a lie -- take 5 mins and create a poll on slack, but don't send it yet!
+- Two truths and a lie
+ - take 5 mins and create a poll on slack, but don't send it yet!
 
 
 <hr>
