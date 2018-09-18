@@ -2,6 +2,7 @@
 
 
 ### Team Members
+<p style="float:right">
   <!-- Add your name below this line -->
   - student 1
   - student 2
@@ -11,7 +12,7 @@
   - student 6
   <!-- names above this line -->
 
-  <p style="float:right">
+
     <img  src="http://www.jedinews.co.uk/wp-content/uploads/2018/01/forces-of-destiny-comic-hera.jpg" width="550px" alt="Ghost">
   </p>
 
