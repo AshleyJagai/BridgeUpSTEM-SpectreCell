@@ -1,5 +1,14 @@
 # BridgeUp-Ghost
 
+### Team Members
+<!-- Add your name below this line -->
+
+
+
+
+
+<!-- names above this line -->
+
 <p align="center">
   <img  src="http://www.jedinews.co.uk/wp-content/uploads/2018/01/forces-of-destiny-comic-hera.jpg" width="550px" alt="Ghost">
 </p>
@@ -12,7 +21,7 @@ Ghost is a starship piloted by Hera Syndulla, the pragmatic leader of a small gr
 ### Unit 1
   | Day | Date        | Weekday | Lessons     | Labs        |
   |:---:|:-----------:|:-------:|:-----------:|:-----------:|
-  | d1  |October 9 |Tuesday | [Introduction, Culture, Communication, and Expectations](units/unit_1/d01/lessons/Intro.md)| [(Re)Introduction to GitHub, Fork Shared Repository](units/unit_1/d01/labs/Github.md)|
+  | d1  |October 9 |Tuesday | [Introduction, Culture, Communication, and Expectations](units/unit_1/d01/lessons/Intro.md)| [Git and Github: Keeping track of your files](units/unit_1/d01/labs/Github.md)|
   | d2  |October 11 |Thursday | [](units/unit_1/d02/lessons)| [](units/unit_1/d02/labs)|
   | d3  |October 16 |Tuesday | [](units/unit_1/d03/lessons)| [](units/unit_1/d03/labs)|
   | d4  |October 18 |Thursday | [](units/unit_1/d04/lessons)| [](units/unit_1/d04/labs)|
