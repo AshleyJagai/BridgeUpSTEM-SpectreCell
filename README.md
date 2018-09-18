@@ -12,7 +12,7 @@ Ghost is a starship piloted by Hera Syndulla, the pragmatic leader of a small gr
 ### Unit 1
   | Day | Date        | Weekday | Lessons     | Labs        |
   |:---:|:-----------:|:-------:|:-----------:|:-----------:|
-  | d1  |October 9 |Tuesday | [Introduction, Culture, Communication, and Expectations](weekly_code/d01/lessons/Intro.md)| [(Re)Introduction to GitHub](weekly_code/d01/labs/Github.md)|
+  | d1  |October 9 |Tuesday | [Introduction, Culture, Communication, and Expectations](weekly_code/d01/lessons/Intro.md)| [(Re)Introduction to GitHub, Fork Shared Repository](weekly_code/d01/labs/Github.md)|
   | d2  |October 11 |Thursday | [](weekly_code/d02/lessons)| [](weekly_code/d02/labs)|
   | d3  |October 16 |Tuesday | [](weekly_code/d03/lessons)| [](weekly_code/d03/labs)|
   | d4  |October 18 |Thursday | [](weekly_code/d04/lessons)| [](weekly_code/d04/labs)|
