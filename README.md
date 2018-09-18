@@ -1,8 +1,8 @@
 # BridgeUp-Ghost
 
-<div style="display:inline">
+<div style="display:inline-block">
   <div>
-  ### Team Members
+### Team Members
   <!-- Add your name below this line -->
   - student 1
   - student 2
