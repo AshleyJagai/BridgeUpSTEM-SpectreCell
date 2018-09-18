@@ -11,7 +11,7 @@
   - student 6
   <!-- names above this line -->
 
-  <p align="center" style="float:right">
+  <p align="right" style="position:absolute">
     <img  src="http://www.jedinews.co.uk/wp-content/uploads/2018/01/forces-of-destiny-comic-hera.jpg" width="550px" alt="Ghost">
   </p>
 
