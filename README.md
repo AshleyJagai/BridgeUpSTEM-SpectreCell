@@ -1,6 +1,6 @@
 # BridgeUp-Ghost
 
-<table>
+<table style="margin:0 auto; border:none">
   <tr>
     <td>
       <ul align="left">
@@ -16,9 +16,8 @@
       </ul>
     </td>
     <td>
-      <p align="center">
-        <img  src="http://www.jedinews.co.uk/wp-content/uploads/2018/01/forces-of-destiny-comic-hera.jpg" width="550px" alt="Ghost">
-      </p>
+      <img  src="http://www.jedinews.co.uk/wp-content/uploads/2018/01/forces-of-destiny-comic-hera.jpg" width="550px" alt="Ghost">
+
     </td>
   </tr>
 </table>
