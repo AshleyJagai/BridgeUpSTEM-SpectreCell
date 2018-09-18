@@ -29,7 +29,7 @@ The Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a smal
   | Day | Date        | Weekday | Lessons     | Labs        |
   |:---:|:-----------:|:-------:|:-----------:|:-----------:|
   | d1  |October 9 |Tuesday | [Introduction, Culture, Communication, and Expectations](units/unit_1/d01/lessons/Intro.md)| [Git and Github: Keeping track of your files](units/unit_1/d01/labs/Github.md)|
-  | d2  |October 11 |Thursday | [BDNYC and BDNYCDB](units/unit_1/d02/lessons)| [](units/unit_1/d02/labs)|
+  | d2  |October 11 |Thursday | [BDNYC and BDNYCDB](units/unit_1/d02/lessons)| [SQL Zoo](units/unit_1/d02/labs)|
   | d3  |October 16 |Tuesday | [](units/unit_1/d03/lessons)| [](units/unit_1/d03/labs)|
   | d4  |October 18 |Thursday | [](units/unit_1/d04/lessons)| [](units/unit_1/d04/labs)|
   | d5  |October 23 |Tuesday | [](units/unit_1/d05/lessons)| [](units/unit_1/d05/labs)|
