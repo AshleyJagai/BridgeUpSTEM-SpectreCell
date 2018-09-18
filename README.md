@@ -1,9 +1,9 @@
 # BridgeUp-Ghost
 
-<table style="margin:0 auto; border:none">
+<table align="center" style="border:none">
   <tr>
     <td>
-      <ul align="left">
+      <ul >
       <h4>Team Members</h4>
         <!-- Add your name below this line -->
         <li>student 1</li>
@@ -16,8 +16,7 @@
       </ul>
     </td>
     <td>
-      <img  src="http://www.jedinews.co.uk/wp-content/uploads/2018/01/forces-of-destiny-comic-hera.jpg" width="550px" alt="Ghost">
-
+      <img  src="http://www.jedinews.co.uk/wp-content/uploads/2018/01/forces-of-destiny-comic-hera.jpg" width="550px" alt="Ghost" />
     </td>
   </tr>
 </table>
