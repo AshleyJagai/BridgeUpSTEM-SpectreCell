@@ -1,7 +1,6 @@
 # BridgeUp-Ghost
 
-<div>
-  <div>
+
 ### Team Members
   <!-- Add your name below this line -->
   - student 1
@@ -11,11 +10,11 @@
   - student 5
   - student 6
   <!-- names above this line -->
-  </div>
+
   <p style="float-right">
     <img  src="http://www.jedinews.co.uk/wp-content/uploads/2018/01/forces-of-destiny-comic-hera.jpg" width="550px" alt="Ghost">
   </p>
-</div>
+
 
 Ghost is a starship piloted by Hera Syndulla, the pragmatic leader of a small group of rebels in Star Wars: Rebels. Hera is an ace engineer, fearless pilot, and amazing strategist in the noble fight against the Galactic Empire. Eventually promoted to the rank of General, Hera directly contributed to the development and success of the Rebel Alliance by becoming one of the first cells to join upon its formation.
 
