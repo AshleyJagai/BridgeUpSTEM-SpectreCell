@@ -1,4 +1,6 @@
-# BridgeUp-SpectreCell
+<p align="center">
+  <h1>BridgeUp-SpectreCell</h1>
+</p>
 
 
 <p align="center">
@@ -8,8 +10,9 @@
 The Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a small group of rebels that were key in the downfall of the Galactic Empire. They were led by ace engineer, fearless pilot, and amazing strategist Hera Syndulla on her starship, the Ghost. The Spectre Cell's persistence and eventual influence directly contributed to the development and success of the Rebel Alliance by becoming one of the first cells to join upon its formation.
 
 <hr>
-
-### Team Members
+<p align="center">
+  <h3>Team Members</h3>
+</p>
 <!-- Add name below this line -->
 -
 -
