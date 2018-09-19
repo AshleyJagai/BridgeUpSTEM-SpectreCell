@@ -39,8 +39,10 @@ Will be updated before each meeting with new content.
 
 - [Internship schedule](https://github.com/colleencleary/BridgeUp-Ghost)
 - Lessons and Activities
-  - Formatted as a markdown file. Follow along with Terminal and Jupyter Notebook
-
+  - Formatted as a markdown file. Follow along with Terminal and Jupyter Notebook.
+- Code
+  - Save code in that day's `/code` directory
+- Push to your forked repo at the end of each meeting
 
 ### Virtual Meetings
 
@@ -104,9 +106,9 @@ Work together, individually, or in small groups on activities.
 
 Challenge yourself!: Try to work through problems without help for first 30 minutes
 
-#### 6:20-6:30pm: Clean-Up
+#### 6:20-6:30pm: Wrap-Up
 
-Shut down computers and clean up work space.
+Push code to forked repository, shut down computers, and clean up work space.
 
 
  <hr>
@@ -115,7 +117,7 @@ Shut down computers and clean up work space.
 
 - Two truths and a lie
   - take 5 mins to create a poll on slack, but don't send it yet!
-  
+
 - Tell us about yourself
   - your name
   - where are you from?
