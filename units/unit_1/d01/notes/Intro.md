@@ -30,7 +30,7 @@ Numerous undergraduate and graduate students have participated in research led b
 
 #### Team Channel
 
- - `bridgeup-ghost`
+ -  `SpectreCell`
 
 
 ### Github
