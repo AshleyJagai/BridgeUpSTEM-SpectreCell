@@ -1,4 +1,4 @@
-<p align="center"><h1>BridgeUp-SpectreCell</h1></p>
+<div align="center"><h1>BridgeUp-SpectreCell</h1></div>
 
 
 <p align="center">
