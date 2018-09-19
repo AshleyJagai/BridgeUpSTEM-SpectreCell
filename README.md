@@ -24,9 +24,9 @@ The Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a smal
   | d3  |October 16 |Tuesday | [Intro to BDs, BDNYC, and BDNYCdb! (oh my?)](units/unit_1/d03/notes) | [Calculator](units/unit_1/d03/labs) |
   | d4  |October 18 |Thursday | [Intro to SQL](units/unit_1/d04/notes) | [SQL Zoo](units/unit_1/d04/labs)|
   | d5  |October 23 |Tuesday | [Extended intro to BDNYCdb](units/unit_1/d05/notes)| [BDNYCdb Tutorial](units/unit_1/d05/labs)|
-  | d6  |October 25 |Thursday | [](units/unit_1/d06/notes)| [](units/unit_1/d06/labs)|
-  | d7  |October 30 |Tuesday | [](units/unit_1/d07/notes)| [](units/unit_1/d07/labs)|
-  | d8  |November 1 |Thursday | [](units/unit_1/d08/notes)| [](units/unit_1/d08/labs)|
+  | d6  |October 25 |Thursday | [ **somethingfun** ](units/unit_1/d06/notes)| [Continue BDNYCdb Tutorial](units/unit_1/d06/labs)|
+  | d7  |October 30 |Tuesday | [**somethingfun**](units/unit_1/d07/notes)| [Continue BDNYCdb Tutorial](units/unit_1/d07/labs)|
+  | d8  |November 1 |Thursday | [**somethingfun**](units/unit_1/d08/notes)| [Continue BDNYCdb Tutorial](units/unit_1/d08/labs)|
   | d9  |November 6 |Tuesday | **No Session Today** |
 
 ### Unit 2
