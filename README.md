@@ -8,7 +8,7 @@
 Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a small group of rebels that were key to the downfall of the Galactic Empire. They were led by ace engineer, fearless pilot, and amazing strategist Hera Syndulla on her starship, the Ghost. The Spectre Cell's persistence and eventual influence directly contributed to the development and success of the Rebel Alliance by becoming one of the first cells to join upon its formation.
 
 <hr>
-<div align="center"><h3>Team Members</h3><p>TBD</p><p>TBD</p><p>TBD</p><p>TBD</p><p>TBD</p><p>TBD</p></div>
+<div align="center"><h3>Spectres</h3><p>TBD</p><p>TBD</p><p>TBD</p><p>TBD</p><p>TBD</p><p>TBD</p></div>
 
 <hr>
 
@@ -21,7 +21,7 @@ Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a small gr
   |:---:|:-----------:|:-------:|:-----------:|:-----------:|
   | d1  |October 9 |Tuesday | [Introduction, Culture, Communication, and Expectations](units/unit_1/d01/notes/Intro.md)| [Computer Configuration and Introduction to Astronomy](units/unit_1/d01/labs/config.md)|
   | d2  |October 11 |Thursday | [Git and Github: Keeping track of your files](units/unit_1/d02/notes/Github.md) | [Collaborating Over Github](units/unit_1/d02/labs/Github_Collaboration.md)|
-  | d3  |October 16 |Tuesday | [Intro to BDs, BDNYC, and BDNYCdb! (oh my?)](units/unit_1/d03/notes) | [Calculator](units/unit_1/d03/labs) |
+  | d3  |October 16 |Tuesday | [Intro to BDs, BDNYC, and BDNYCdb! (oh my?)](units/unit_1/d03/notes) | [Python Calculator](units/unit_1/d03/labs) |
   | d4  |October 18 |Thursday | [Intro to SQL](units/unit_1/d04/notes) | [SQL Zoo](units/unit_1/d04/labs)|
   | d5  |October 23 |Tuesday | [Extended intro to BDNYCdb](units/unit_1/d05/notes)| [BDNYCdb Tutorial](units/unit_1/d05/labs)|
   | d6  |October 25 |Thursday | [ **somethingfun** ](units/unit_1/d06/notes)| [Continue BDNYCdb Tutorial](units/unit_1/d06/labs)|
