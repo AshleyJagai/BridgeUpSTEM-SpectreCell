@@ -2,13 +2,32 @@
 
 ## Learning Objectives
 
+- Reintroduction to project description
 - Introduction to internship, department, and culture
 - Communication tools
 - Expectations/Daily happenings
 
 <hr>
 
-## People
+# SpectreCell
+
+### Mission
+
+Create a template script with Python and SQL for ingesting new data into the BDNYC database of Brown Dwarfs. Finished script will need to wrangle data and address any duplicates and missing fields. The script will be developed using Gaia data as a pilot. Newly added data will be mapped in a movie created with interactive data visualization software, OpenSpace.
+
+### Deliverables
+
+5-minute presentation, 15-minute public talk, poster, production ready script, updated database
+
+#### Stretch Goals
+
+Create a filter or GUI feature for OpenSpace, improvements to BDNYC web interface
+
+### Expected Tech Skills
+
+Github/Git, Python (Matplotlib, Pandas, NumPy, SciPy), SQL, databases, OpenSpace, Terminal, data normalization,  data cleaning and processing, data exploration and visualization
+
+### People
 
 - [Colleen Cleary](https://colleencleary.github.io/) - Helen Fellow
 - [Jackie Faherty](http://www.jackiefaherty.com/) - Senior Scientist
@@ -65,6 +84,7 @@ This is a chance to let me know how you're feeling every day!
 <hr>
 
 # Expectations
+
  - Be present and active from 4:30pm-6:30pm on Tuesdays/Thursdays
  - Let someone know if you're running late/will be absent
  - Use laptop to follow markdowns and work on code
@@ -78,6 +98,7 @@ This is a chance to let me know how you're feeling every day!
  - Follow the "golden rule"
 
 # Meeting Overview
+
 This is what a typical meeting will look like.
 
 #### 4:30pm: Welcome!

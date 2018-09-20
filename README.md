@@ -5,7 +5,7 @@
   <img  src="https://vignette.wikia.nocookie.net/starwars/images/1/17/KananCrew.png/revision/latest?cb=20140808024633" width="600px" alt="Ghost">
 </p>
 
-The Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a small group of rebels that were key in the downfall of the Galactic Empire. They were led by ace engineer, fearless pilot, and amazing strategist Hera Syndulla on her starship, the Ghost. The Spectre Cell's persistence and eventual influence directly contributed to the development and success of the Rebel Alliance by becoming one of the first cells to join upon its formation.
+Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a small group of rebels that were key to the downfall of the Galactic Empire. They were led by ace engineer, fearless pilot, and amazing strategist Hera Syndulla on her starship, the Ghost. The Spectre Cell's persistence and eventual influence directly contributed to the development and success of the Rebel Alliance by becoming one of the first cells to join upon its formation.
 
 <hr>
 <div align="center"><h3>Team Members</h3><p>TBD</p><p>TBD</p><p>TBD</p><p>TBD</p><p>TBD</p><p>TBD</p></div>
@@ -19,7 +19,7 @@ The Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a smal
 ### Unit 1
   | Day | Date        | Weekday | Lessons     | Labs        |
   |:---:|:-----------:|:-------:|:-----------:|:-----------:|
-  | d1  |October 9 |Tuesday | [Introduction, Culture, Communication, and Expectations](units/unit_1/d01/notes/Intro.md)| [Computer Configuration for Astronomy Research](units/unit_1/d01/labs)|
+  | d1  |October 9 |Tuesday | [Introduction, Culture, Communication, and Expectations](units/unit_1/d01/notes/Intro.md)| [Computer Configuration and Introduction to Astronomy](units/unit_1/d01/labs/config.md)|
   | d2  |October 11 |Thursday | [Git and Github: Keeping track of your files](units/unit_1/d02/notes/Github.md) | [Collaborating Over Github](units/unit_1/d02/labs/Github_Collaboration.md)|
   | d3  |October 16 |Tuesday | [Intro to BDs, BDNYC, and BDNYCdb! (oh my?)](units/unit_1/d03/notes) | [Calculator](units/unit_1/d03/labs) |
   | d4  |October 18 |Thursday | [Intro to SQL](units/unit_1/d04/notes) | [SQL Zoo](units/unit_1/d04/labs)|
@@ -43,7 +43,7 @@ The Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a smal
   | d18 |December 6 |Thursday | [](units/unit_2/d18/notes)| [](units/unit_2/d18/labs)|
   | d19 |December 11 |Tuesday | [](units/unit_2/d19/notes)| [](units/unit_2/d19/labs)|
   | d20 |December 13 |Thursday | **Presentation Skills Workshop** |
-  | d21 |December 18 |Tuesday | [](units/unit_2/d21/notes)| [](units/unit_2/d21/labs)|
+  | d21 |December 18 |Tuesday | **Practice Presentation** |
   | d22 |December 20 |Thursday | **Winter Presentations** |
   |  |December 25 - January 1 | | **Winter Recess** |
 
