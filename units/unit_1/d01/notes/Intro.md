@@ -27,6 +27,7 @@ Create a filter or GUI feature for OpenSpace, improvements to BDNYC web interfac
 
 Github/Git, Python (Matplotlib, Pandas, NumPy, SciPy), SQL, databases, OpenSpace, Terminal, data normalization,  data cleaning and processing, data exploration and visualization
 
+
 ### People
 
 - [Colleen Cleary](https://colleencleary.github.io/) - Helen Fellow
@@ -52,6 +53,22 @@ Numerous undergraduate and graduate students have participated in research led b
  -  `#spectrecell`
 
 
+<hr>
+
+## ICEBREAKER!
+
+- Two truths and a lie
+  - take 5 mins to create a poll on slack, but don't send it yet!
+
+- Tell us about yourself
+  - your name
+  - where are you from?
+  - prior experience with coding/science?
+  - future goals? (short-term? long-term?)
+  - what is the last thing you purchased online?
+
+<hr>
+
 ### Github
 
 Will be updated before each meeting with new content.
@@ -66,6 +83,7 @@ Will be updated before each meeting with new content.
 ### Virtual Meetings
 
 When necessary, we'll be meeting online with Zoom or Google Hangouts. We'll also use this for any guest speakers that can't make it in.
+
 
 ## Micro Feedback
 
@@ -83,6 +101,19 @@ This is a chance to let me know how you're feeling every day!
 
 <hr>
 
+## ICEBREAKER!
+
+- Two truths and a lie
+
+- Tell us about yourself
+ - your name
+ - where are you from?
+ - prior experience with coding/science?
+ - future goals? (short-term? long-term?)
+ - what is the last thing you purchased online?
+
+<hr>
+
 # Expectations
 
  - Be present and active from 4:30pm-6:30pm on Tuesdays/Thursdays
@@ -96,6 +127,21 @@ This is a chance to let me know how you're feeling every day!
  - Respond to Micro Feedback and polls
  - Ask for help!
  - Follow the "golden rule"
+
+ <hr>
+
+## ICEBREAKER!
+
+- Two truths and a lie
+
+- Tell us about yourself
+  - your name
+  - where are you from?
+  - prior experience with coding/science?
+  - future goals? (short-term? long-term?)
+  - what is the last thing you purchased online?
+
+<hr>
 
 # Meeting Overview
 
@@ -137,7 +183,6 @@ Push code to forked repository, shut down computers, and clean up work space.
 ## ICEBREAKER!
 
 - Two truths and a lie
-  - take 5 mins to create a poll on slack, but don't send it yet!
 
 - Tell us about yourself
   - your name
