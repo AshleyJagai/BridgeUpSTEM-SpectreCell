@@ -29,10 +29,10 @@ That's it! Not bad, right? As we develop our code, this process will get more tr
 
 Forking a repository lets you play with the code and save it to your own repo without affecting the owner's code!
 
- 1. go to [lesson repo](https://github.com/colleencleary/BridgeUp-Ghost.git)
+ 1. go to [lesson repo](https://github.com/amnh/BridgeUP-STEM-SpectreCell.git)
  2. click on the Fork button
  3. choose the account to save it to (should be your username)
- 4. cd to an easy-to-find directory in terminal(we'll be using this all year after all!)
+ 4. cd to an easy-to-find directory in terminal (we'll be using this all year after all!)
  5. clone it to your local computer
  6. add/commit/push like normal!
 
