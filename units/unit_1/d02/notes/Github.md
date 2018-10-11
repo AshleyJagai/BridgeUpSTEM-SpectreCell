@@ -65,7 +65,7 @@ Set up an SSH key instead of having to log in all the time!
 ## Create a Repository
 
  1. Log into your [Github](https://github.com/) account
- 2. Click on "+" sign or ]green "New Repository" button
+ 2. Click on "+" sign or green "New Repository" button
  3. Name your new repo and create it!
 
 ## Clone Your Repository
