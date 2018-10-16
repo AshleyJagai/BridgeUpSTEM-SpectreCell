@@ -13,8 +13,9 @@ Create a simple calculator (in Atom) that can add, subtract, multiply, or divide
   - read [documentation*](https://docs.python.org/3/)
 
 ### **Commit your code to Github!**
-`git add .`
-`git commit -m 'python calculator complete'`
+```git add .
+git commit -m 'python calculator complete'
+```
 
 <hr>
 
