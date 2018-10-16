@@ -13,7 +13,8 @@ Create a simple calculator (in Atom) that can add, subtract, multiply, or divide
   - read [documentation*](https://docs.python.org/3/)
 
 ### **Commit your code to Github!**
-```git add .
+```
+git add .
 git commit -m 'python calculator complete'
 ```
 
@@ -24,7 +25,8 @@ git commit -m 'python calculator complete'
 Copy and paste each code snippet into a new .py file. Use Atom's Hydrogen package to make sure you've fixed it. Commit whenever you've fixed it.
 
 ### 1.
-```current_time_str = input("What is the current time (in hours 0-23)?")
+```
+current_time_str = input("What is the current time (in hours 0-23)?")
 wait_time_str = input("How many hours do you want to wait")
 
 current_time_int = int(current_time_str)
@@ -40,7 +42,8 @@ Commit message - 'fixed first code snippet'
 <hr>
 
 ### 2.
-```current_time_str = input("What is the current time (in hours 0-23)?")
+```
+current_time_str = input("What is the current time (in hours 0-23)?")
 wait_time_str = input("How many hours do you want to wait")
 
 current_time_int = int(current_time_str)
@@ -56,7 +59,8 @@ Commit message - 'fixed second code snippet'
 <hr>
 
 ### 3.
-```current_time_str = input("What is the "current time" (in hours 0-23)?")
+```
+current_time_str = input("What is the "current time" (in hours 0-23)?")
 wait_time_str = input("How many hours do you want to wait")
 
 current_time_int = int(current_time_str)
@@ -72,7 +76,8 @@ Commit message - 'fixed third code snippet'
 <hr>
 
 ### 4.
-```a = input('wpisz godzine')
+```
+a = input('wpisz godzine')
 x = input('wpisz liczbe godzin')
 int(x)
 int(a)
@@ -120,7 +125,8 @@ Commit message - 'fixed sixth code snippet'
 <hr>
 
 ### 7.
-```present_time = input("Enter the present timein hours:")
+```
+present_time = input("Enter the present timein hours:")
 set_alarm = input("Set the hours for alarm:")
 int (present_time, set_time, alarm_time)
 alarm_time = present_time + set_alarm
@@ -133,7 +139,8 @@ Commit message - 'fixed seventh code snippet'
 <hr>
 
 ### 8.
-```current_time_str = input("What is the current time (in hours 0-23)?")
+```
+current_time_str = input("What is the current time (in hours 0-23)?")
 current_time_int = int(current_time_str)
 
 wait_time_str = input("How many hours do you want to wait")
