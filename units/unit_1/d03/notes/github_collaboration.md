@@ -1,7 +1,3 @@
-# First!
-
-Install hydrogen package on atom.
-
 # Paired Activity
 
 By collaborating over Github, each pair will add something to a readme file in a shared repository via Git/Github workflow.

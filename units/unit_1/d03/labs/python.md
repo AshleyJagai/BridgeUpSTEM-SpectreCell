@@ -2,6 +2,11 @@
 
 Create a new .py file for each problem and save in today's `code` directory. Commit your code to Github whenever you get something working.
 
+### First!
+
+Install hydrogen package on atom.
+
+
 ## Python Calculator
 
 Create a simple calculator (in Atom) that can add, subtract, multiply, or divide **depending on input from the user***.
