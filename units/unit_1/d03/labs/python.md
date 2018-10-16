@@ -4,13 +4,13 @@ Create a new .py file for each problem and save in today's `code` directory. Com
 
 ## Python Calculator
 
-Create a simple calculator (in Atom) that can add, subtract, multiply, or divide depending on **input from the user***
+Create a simple calculator (in Atom) that can add, subtract, multiply, or divide **depending on input from the user***.
 
 ### hints
   - use functions
   - use conditional statements
   - get functions working before you think about conditional statements
-  - read [documentation*](https://docs.python.org/3/)
+  - read [documentation](https://docs.python.org/3/)*
 
 ### **Commit your code to Github!**
 ```
@@ -22,7 +22,7 @@ git commit -m 'python calculator complete'
 
 ## Fix the Errors!
 
-Copy and paste each code snippet into a new .py file. Use Atom's Hydrogen package to make sure you've fixed it. Commit whenever you've fixed it.
+Copy and paste each code snippet into a new .py file. Use Atom's Hydrogen package to make sure it's working. Commit whenever you've fixed it.
 
 ### 1.
 ```

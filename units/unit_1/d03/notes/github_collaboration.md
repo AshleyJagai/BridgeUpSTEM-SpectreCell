@@ -3,7 +3,7 @@
 By collaborating over Github, each pair will add something to a readme file in a shared repository via Git/Github workflow.
 
 - Choose one member's new repo to be shared. The 'owner' should add the other member as a collaborator in settings.
-- collaborator should accept invitation sent via email. Make sure to `git clone` in a new directory in terminal for a local version
+- Collaborator should accept invitation sent via email. Make sure to `git clone` in a new directory in terminal for a local version
 
 ### Create a new branch
 
@@ -24,3 +24,10 @@ Work your way through instructions as a team.
 11. pull from the master branch to update your code
 
 That's it! Not bad, right? As we develop our code, this process will get more tricky, but we'll address issues as they come up.
+
+<hr>
+
+### Hints
+ - review [last week's notes](https://github.com/colleencleary/BridgeUp-SpectreCell/blob/master/units/unit_1/d02/notes/Github.md)
+ - review slides from BridgeUp bootcamp
+ - Google is your friend!
