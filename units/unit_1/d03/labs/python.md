@@ -6,28 +6,12 @@ Create a new .py file for each problem and save in today's `code` directory. Com
 
 Install hydrogen package on atom.
 
+## What's wrong with the code?
 
-## Python Calculator
+Copy and paste each code snippet into a new .py file. Use Atom's Hydrogen package to make sure it's working.
+`# use comments to describe the error and how to fix it ('cmd' + '/' is an easy way to comment out selected lines)`
 
-Create a simple calculator (in Atom) that can add, subtract, multiply, or divide **depending on input from the user***.
-
-### hints
-  - use functions
-  - use conditional statements
-  - get functions working before you think about conditional statements
-  - read [documentation](https://docs.python.org/3/)*
-
-### **Commit your code to Github!**
-```
-git add .
-git commit -m 'python calculator complete'
-```
-
-<hr>
-
-## Fix the Errors!
-
-Copy and paste each code snippet into a new .py file. Use Atom's Hydrogen package to make sure it's working. Commit whenever you've fixed it.
+Commit whenever you've got something working.
 
 ### 1.
 ```
@@ -42,19 +26,22 @@ print(final_time_int)
 ```
 
 ### **Commit your code to Github!**
-Commit message - 'fixed first code snippet'
+```
+git add .
+git commit -m 'fixed first code snippet'
+```
 
 <hr>
 
 ### 2.
 ```
 current_time_str = input("What is the current time (in hours 0-23)?")
-wait_time_str = input("How many hours do you want to wait")
+wait_time_str = input("How many hours do you want to wait"
 
 current_time_int = int(current_time_str)
 wait_time_int = int(wait_time_str)
 
-final_time_int = current_time_int + wait_time_int
+final_time_int = current_time_str + wait_time_str
 print(final_time_int)
 ```
 
@@ -82,15 +69,15 @@ Commit message - 'fixed third code snippet'
 
 ### 4.
 ```
-a = input('wpisz godzine')
-x = input('wpisz liczbe godzin')
+a = input('lkjhlkj')
+x = input('jyhglhgfsazsdf')
 int(x)
 int(a)
 h = x // 24
 s = x % 24
 print (h, s)
 a = a + s
-print ('godzina teraz', a)
+print ('jkhgxzstszasbohnoj', a)
 ```
 
 ### **Commit your code to Github!**
@@ -144,6 +131,9 @@ Commit message - 'fixed seventh code snippet'
 <hr>
 
 ### 8.
+For this one, leave the input fields blank and click OK. Why didn't this work?
+Then, enter a number in one field and a string in the second. Why doesn't this work either?
+
 ```
 current_time_str = input("What is the current time (in hours 0-23)?")
 current_time_int = int(current_time_str)
@@ -157,6 +147,22 @@ print(final_time_int)
 
 ### **Commit your code to Github!**
 Commit message - 'fixed last code snippet'
+
+<hr>
+
+## Python Calculator
+
+Create a simple calculator (in Atom) that can add, subtract, multiply, or divide **depending on input from the user***.
+
+### hints
+  - use functions
+  - use conditional statements
+  - get functions working before you think about conditional statements
+  - read [documentation](https://docs.python.org/3/)*
+
+### **Commit your code to Github!**
+Commit message - 'python calculator complete'
+
 
 <hr>
 
