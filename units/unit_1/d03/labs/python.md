@@ -170,7 +170,7 @@ Commit message - 'python calculator complete'
 
 ### Boolean Expressions
 
-Creat a .md file in today's code folder and answer whether the output will be true or false for each.
+Create a .md file in today's code folder and answer whether the output will be true or false for each.
 
 1. 999 > 999
 2. 999 == 999
