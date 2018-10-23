@@ -23,7 +23,7 @@ Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a small gr
   | d2  |October 11 |Thursday | [Terminal, Git, and Github: Keeping track of your files](units/unit_1/d02/notes/Github.md) | [Collaborating Over Github](units/unit_1/d02/labs/)|
   | d3  |October 16 |Tuesday | [Github Collaboration Cont'd/Code Chat with JP Ventura](units/unit_1/d03/notes/) | [Python](units/unit_1/d03/labs) |
   | d4  |October 18 |Thursday | [Github Collaboration Cont'd](units/unit_1/d04/notes) | [Python Cont'd](units/unit_1/d04/labs)|
-  | d5  |October 23 |Tuesday | [](units/unit_1/d05/notes)| [](units/unit_1/d05/labs)|
+  | d5  |October 23 |Tuesday | [Intro to SQL](units/unit_1/d05/notes/sql_basics.md)| [Khan Academy: Intro to SQL](units/unit_1/d05/labs/introSQL.md)|
   | d6  |October 25 |Thursday | [](units/unit_1/d06/notes)| [](units/unit_1/d06/labs)|
   | d7  |October 30 |Tuesday | [](units/unit_1/d07/notes)| [](units/unit_1/d07/labs)|
   | d8  |November 1 |Thursday | [](units/unit_1/d08/notes)| [](units/unit_1/d08/labs)|
