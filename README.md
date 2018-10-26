@@ -25,7 +25,7 @@ Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a small gr
   | d4  |October 18 |Thursday | [Github Collaboration Cont'd](units/unit_1/d04/notes) | [Python Cont'd](units/unit_1/d04/labs)|
   | d5  |October 23 |Tuesday | [Intro to SQL](units/unit_1/d05/notes/sql_basics.md)| [Khan Academy: Intro to SQL (SQL Basics)](units/unit_1/d05/labs/introSQL.md)|
   | d6  |October 25 |Thursday | [](units/unit_1/d06/notes)| [Khan Academy: Intro to SQL (More Advanced SQL Queries)](units/unit_1/d05/labs/introSQL.md)|
-  | d7  |October 30 |Tuesday | [](units/unit_1/d07/notes)| [](units/unit_1/d07/labs)|
+  | d7  |October 30 |Tuesday | [](units/unit_1/d07/notes)| [Khan Academy: Intro to SQL (More Advanced SQL Queries + Relational Queries in SQL)](units/unit_1/d05/labs/introSQL.md)|
   | d8  |November 1 |Thursday | [](units/unit_1/d08/notes)| [](units/unit_1/d08/labs)|
   | d9  |November 6 |Tuesday | **No Session Today** |
 
