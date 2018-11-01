@@ -13,6 +13,7 @@ If you're behind on Khan Academy, skip SQL Zoo take the opportunity to catch up.
 
 
 ## Programming with SQL Zoo
+
 **Until 5:20pm**
 
 Work through SQL Zoo problems on your own. If you're stuck, talk about it the problem with the rest of the group.
@@ -32,6 +33,7 @@ Work through SQL Zoo problems on your own. If you're stuck, talk about it the pr
 
 
 ## Continue SQL training with [Khan Academy](https://www.khanacademy.org/computing/computer-programming/sql/)
+
 **Until 6:20pm**
 
  - As a group, we finished [More Advanced SQL Queries](https://www.khanacademy.org/computing/computer-programming/sql#more-advanced-sql-queries). **We're skipping the Data Dig Challenge.**
@@ -59,5 +61,7 @@ Work through SQL Zoo problems on your own. If you're stuck, talk about it the pr
 ## Microfeedback
 
 Complete [microfeedback](https://goo.gl/forms/H7dnmdGBe7Bsm8Cy2) for today.
+
+
 
 Don't forget to push today's updates to origin master!
