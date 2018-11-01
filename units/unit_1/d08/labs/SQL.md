@@ -42,9 +42,9 @@ Work through SQL Zoo problems on your own. If you're stuck, talk about it the pr
 
 
 
-1. Use headphones when watching videos, but talk about problems and challenges as a group (like we have been). The only difference today should be the use of headphones for videos.
+    1. Use headphones when watching videos, but talk about problems and challenges as a group (like we have been). The only difference today should be the use of headphones for videos.
 
-2. Try to keep the same pace. If you finish challenges before your teammates, offer to help or continue SQL Zoo problems.
+    2. Try to keep the same pace. If you finish challenges before your teammates, offer to help or continue SQL Zoo problems.
 
 
 
