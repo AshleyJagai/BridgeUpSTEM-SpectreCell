@@ -3,7 +3,11 @@
 If you're behind on Khan Academy, skip SQL Zoo take the opportunity to catch up.
 
 
+
+
 <hr>
+
+
 
 
 ## Programming with SQL Zoo
@@ -17,7 +21,10 @@ Work through SQL Zoo problems on your own. If you're stuck, talk about it the pr
 
 
 
+
 <hr>
+
+
 
 
 ## Continue SQL training with [Khan Academy](https://www.khanacademy.org/computing/computer-programming/sql/)
@@ -33,7 +40,10 @@ Try to keep the same pace. If you finish challenges before your teammates, offer
 
 
 
+
 <hr>
+
+
 
 
 ## Microfeedback
