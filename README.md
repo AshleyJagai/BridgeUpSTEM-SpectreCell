@@ -32,7 +32,7 @@ Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a small gr
 ### Unit 2
   | Day | Date        | Weekday | Lessons     | Labs        |
   |:---:|:-----------:|:-------:|:-----------:|:-----------:|
-  | d010 |November 8 |Thursday | [](units/unit_2/d10/notes)| [](units/unit_2/d10/labs)|
+  | d010 |November 8 |Thursday | [Admin Stuff](units/unit_2/d10/notes)| [More SQL Joining!](units/unit_2/d10/labs)|
   | d11 |November 13 |Tuesday | [](units/unit_2/d11/notes)| [](units/unit_2/d11/labs)|
   | d12 |November 15 |Thursday | [](units/unit_2/d12/notes)| [](units/unit_2/d12/labs)|
   | d13 |November 20 |Tuesday | [](units/unit_2/d13/notes)| [](units/unit_2/d13/labs)|
