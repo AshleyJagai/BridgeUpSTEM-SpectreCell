@@ -20,20 +20,20 @@
 
 2. Navigate to the BDNYCdb_practice directory
 
-  `cd BDNYCdb_practice`
+    `cd BDNYCdb_practice`
 
 
 3. In Terminal type `sqlite3` -- this opens up SQLite in command-line
 
 4. `.help` will give us a list of SQLite commands
 
-  `.databases` will show us a list of our databases and `.tables` will show our tables (we have none yet)
+    `.databases` will show us a list of our databases and `.tables` will show our tables (we have none yet)
 
-  `.quit` exits sqlite
+    `.quit` exits sqlite
 
 5. Create a new database in terminal with `sqlite3 testDB.db`
 
-  Now we can see our new database with `.databases`
+    Now we can see our new database with `.databases`
   `.tables` is still empty
 
 ### Quick activity
@@ -43,7 +43,7 @@ Use your code from Khan Academy [Challenge: Playlist maker](https://www.khanacad
   *Helpful hint: change your settings to show data as columns and turn on headers (column names)*
 
   `.mode column`
-  
+
   `.header on`
 
 
