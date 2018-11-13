@@ -98,6 +98,7 @@ Using what we learned with Khan Academy, complete the following tasks:
 1. Install packages:
   `pip install matplotlib`
   `pip install pandas`
+  `pip install astrodbkit`
   `pip install astrodbkit --upgrade`
 
 2. Navigate to today's code folder
