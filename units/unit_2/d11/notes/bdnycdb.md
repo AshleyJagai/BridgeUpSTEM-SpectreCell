@@ -14,20 +14,25 @@
 
   - `cd` into your #SpectreCell repo if you're not already there
   - `git pull upstream master` if you haven't already
+
     *You should see two new directories, "BDNYCdb_practice" and "project_code"*
 
 
 2. Navigate to the BDNYCdb_practice directory
+
   `cd BDNYCdb_practice`
 
 
 3. In Terminal type `sqlite3` -- this opens up SQLite in command-line
 
 4. `.help` will give us a list of SQLite commands
+
   `.databases` will show us a list of our databases and `.tables` will show our tables (we have none yet)
+
   `.quit` exits sqlite
 
 5. Create a new database in terminal with `sqlite3 testDB.db`
+
   Now we can see our new database with `.databases`
   `.tables` is still empty
 
@@ -36,7 +41,9 @@
 Use your code from Khan Academy [Challenge: Playlist maker](https://www.khanacademy.org/computing/computer-programming/sql/more-advanced-sql-queries/pc/challenge-playlist-maker) to recreate the tables in terminal.
 
   *Helpful hint: change your settings to show data as columns and turn on headers (column names)*
+
     `.mode column`
+
     `.header on`
 
 
@@ -46,10 +53,7 @@ Use your code from Khan Academy [Challenge: Playlist maker](https://www.khanacad
 
 # BDNYCdb
 
-### **Question:** What is a database?
-
-
-
+]**Question:** What is a database?
 
 ## Quick Overview of BDNYCdb
 From [BDNYCdb repo](https://github.com/BDNYC/BDNYCdb/blob/master/tutorial/tutorial.md)
@@ -70,6 +74,7 @@ While you can use pure SQL commands to interface with our database (eg, the sqli
 ## BDNYCdb with sqlite3
 
 1. Open BDNYCdb in sqlite3
+
   `sqlite3 bdnycdev_copy.db` from terminal or `.open bdnycdev_copy.db` if sqlite3 is still open
 
 2. Let's try `.databases`, `.tables`, and `.dbinfo` will list some information about the database
@@ -96,18 +101,21 @@ Using what we learned with Khan Academy, complete the following tasks:
 [astrodbkit documentation](https://astrodbkit.readthedocs.io/en/latest/index.html)
 
 1. Install packages:
-  `pip install matplotlib`
-  `pip install pandas`
-  `pip install astrodbkit`
-  `pip install astrodbkit --upgrade`
+  - `pip install matplotlib`
+  - `pip install pandas`
+  - `pip install astrodbkit`
+  - `pip install astrodbkit --upgrade`
 
 2. Navigate to today's code folder
+
   `cd units/unit_2/d11/code`
 
 3. create a new python file
+
   `touch database_tutorial.py`
 
 4. Open new python file in atom
+
   `atom database_tutorial.py`
 
 5. Follow along the [BDNYCdb tutorial](https://github.com/BDNYC/BDNYCdb/blob/master/tutorial/tutorial.md) starting with **Loading the Database**
