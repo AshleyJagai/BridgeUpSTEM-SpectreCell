@@ -75,7 +75,7 @@ While you can use pure SQL commands to interface with our database (eg, the sqli
 
 1. Open BDNYCdb in sqlite3
 
-  `sqlite3 bdnycdev_copy.db` from terminal or `.open bdnycdev_copy.db` if sqlite3 is still open
+    `sqlite3 bdnycdev_copy.db` from terminal or `.open bdnycdev_copy.db` if sqlite3 is still open
 
 2. Let's try `.databases`, `.tables`, and `.dbinfo` will list some information about the database
 
