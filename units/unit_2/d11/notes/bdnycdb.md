@@ -43,6 +43,7 @@ Use your code from Khan Academy [Challenge: Playlist maker](https://www.khanacad
   *Helpful hint: change your settings to show data as columns and turn on headers (column names)*
 
   `.mode column`
+  
   `.header on`
 
 
