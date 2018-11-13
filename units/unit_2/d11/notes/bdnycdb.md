@@ -42,8 +42,8 @@ Use your code from Khan Academy [Challenge: Playlist maker](https://www.khanacad
 
   *Helpful hint: change your settings to show data as columns and turn on headers (column names)*
 
-    `.mode column`
-    `.header on`
+  `.mode column`
+  `.header on`
 
 
 <hr>
@@ -52,7 +52,7 @@ Use your code from Khan Academy [Challenge: Playlist maker](https://www.khanacad
 
 # BDNYCdb
 
-]**Question:** What is a database?
+**Question:** What is a database?
 
 ## Quick Overview of BDNYCdb
 From [BDNYCdb repo](https://github.com/BDNYC/BDNYCdb/blob/master/tutorial/tutorial.md)
