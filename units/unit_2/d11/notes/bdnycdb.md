@@ -87,7 +87,7 @@ Using what we learned with Khan Academy, complete the following tasks:
 
   2. List the first 10 entries (`LIMIT 10`) in the `sources` table
 
-  3. Find out how many entries in the `spectra` table came from the instruments with the id "46".
+  3. Find out how many entries in the `spectra` table came from the instrument with the id "46".
 
   4. List only the Hubble Space Telescope (HST) row from the `telescopes` table.
 
