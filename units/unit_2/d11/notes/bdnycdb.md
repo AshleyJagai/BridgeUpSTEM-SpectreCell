@@ -43,7 +43,6 @@ Use your code from Khan Academy [Challenge: Playlist maker](https://www.khanacad
   *Helpful hint: change your settings to show data as columns and turn on headers (column names)*
 
     `.mode column`
-
     `.header on`
 
 
@@ -101,21 +100,21 @@ Using what we learned with Khan Academy, complete the following tasks:
 [astrodbkit documentation](https://astrodbkit.readthedocs.io/en/latest/index.html)
 
 1. Install packages:
-  - `pip install matplotlib`
-  - `pip install pandas`
-  - `pip install astrodbkit`
-  - `pip install astrodbkit --upgrade`
+    - `pip install matplotlib`
+    - `pip install pandas`
+    - `pip install astrodbkit`
+    - `pip install astrodbkit --upgrade`
 
 2. Navigate to today's code folder
 
-  `cd units/unit_2/d11/code`
+    `cd units/unit_2/d11/code`
 
 3. create a new python file
 
-  `touch database_tutorial.py`
+    `touch database_tutorial.py`
 
 4. Open new python file in atom
 
-  `atom database_tutorial.py`
+    `atom database_tutorial.py`
 
 5. Follow along the [BDNYCdb tutorial](https://github.com/BDNYC/BDNYCdb/blob/master/tutorial/tutorial.md) starting with **Loading the Database**
