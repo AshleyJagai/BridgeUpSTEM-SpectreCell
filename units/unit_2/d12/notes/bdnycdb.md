@@ -10,14 +10,6 @@
 
 
 
-  `.mode column`
-
-  `.header on`
-
-
-<hr>
-
-
 ![BDNYC Database](https://raw.githubusercontent.com/BDNYC/BDNYCdb/master/tutorial/full_database.png)
 
 
