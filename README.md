@@ -33,11 +33,11 @@ Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a small gr
   | Day | Date        | Weekday | Lessons     | Labs        |
   |:---:|:-----------:|:-------:|:-----------:|:-----------:|
   | d010 |November 8 |Thursday | [Admin Stuff](units/unit_2/d10/notes)| [More SQL Joining with Khan Academy!](units/unit_2/d10/labs)|
-  | d11 |November 13 |Tuesday | [Command Line SQLite3 amd BDNYCdb](units/unit_2/d11/notes/bdnycdb.md)| [](units/unit_2/d11/labs)|
-  | d12 |November 15 |Thursday | [](units/unit_2/d12/notes)| [](units/unit_2/d12/labs)|
-  | d13 |November 20 |Tuesday | [](units/unit_2/d13/notes)| [](units/unit_2/d13/labs)|
+  | d11 |November 13 |Tuesday | [Command Line SQLite3 and BDNYCdb](units/unit_2/d11/notes/bdnycdb.md)| [](units/unit_2/d11/labs)|
+  | d12 |November 15 |Thursday | [BDNYCdb Cont'd - postponing until Tuesday](units/unit_2/d12/notes/bdnycdb.md)| [More SQL Joining practice!](units/unit_2/d12/labs/SQL.md)|
+  | d13 |November 20 |Tuesday | [BDNYCdb Cont'd](units/unit_2/d13/notes/bdnycdb.md)| [](units/unit_2/d13/labs)|
   | d14 |November 22 |Thursday | **No Session Today** |
-  | d15 |November 27 |Tuesday | [](units/unit_2/d15/notes)| [](units/unit_2/d15/labs)|
+  | d15 |November 27 |Tuesday | [Reconfiguring Atom](units/unit_2/d15/notes/reconfig.md)| [GAIAAAAAAAAAAAAAAHHHHHHHH!!!!!!!!!](units/unit_2/d15/labs/gaia.md)|
   | d16 |November 29 |Thursday | [](units/unit_2/d16/notes)| [](units/unit_2/d16/labs)|
   | d17 |December 4 |Tuesday | [](units/unit_2/d17/notes)| [](units/unit_2/d17/labs)|
   | d18 |December 6 |Thursday | [](units/unit_2/d18/notes)| [](units/unit_2/d18/labs)|
@@ -45,7 +45,7 @@ Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a small gr
   | d20 |December 13 |Thursday | **Presentation Skills Workshop** |
   | d21 |December 18 |Tuesday | **Practice Presentation** |
   | d22 |December 20 |Thursday | **Winter Presentations** |
-  |  |December 25 - January 1 | | **Winter Recess** |
+  |  |Dec 25 - Jan 1 | | **Winter Recess** |
 
 ### Unit 3
   | Day | Date        | Weekday | Lessons     | Labs        |
