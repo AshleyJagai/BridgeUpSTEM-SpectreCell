@@ -18,7 +18,7 @@
 
     `atom project_processCSV.py`
 
-4. Let's open up the [BDNYCdb tutorial](https://github.com/BDNYC/BDNYCdb/blob/master/tutorial/tutorial.md) as a resource
+4. Let's open up the [BDNYCdb tutorial](https://github.com/BDNYC/BDNYCdb/blob/master/tutorial/tutorial.md) and the [pandas documentation](http://pandas.pydata.org/pandas-docs/stable/) as resources
 
 
 ## Project Pt. 1!
