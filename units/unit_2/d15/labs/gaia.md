@@ -1,10 +1,10 @@
 # Getting started with GAIA
 
-![BDNYC Database](https://raw.githubusercontent.com/BDNYC/BDNYCdb/master/tutorial/full_database.png)
+![GAIA map](https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2018/astronomerso.jpg)
 
 ## Work Set-Up
 
-[GAIA map](https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2018/astronomerso.jpg)
+[astrodbkit documentation](https://astrodbkit.readthedocs.io/en/latest/index.html)
 
 1. Navigate to today's code folder
 
