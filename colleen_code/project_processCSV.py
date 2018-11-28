@@ -8,3 +8,5 @@ gaia_catalogue = pd.read_csv('gaia_data/all_catalog.csv')
 db = astrodb.Database('BDNYCdb_practice/bdnycdev_copy.db')
 
 db.query('select * from sources')
+
+clearydawg
