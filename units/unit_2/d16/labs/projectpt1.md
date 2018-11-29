@@ -38,3 +38,15 @@
 - Find a way to compare the datasets and store pre-existing objects in your matches array and the rest in your array of new objects
 
 - Store your created dataframes as csv files (don't forget to give them descriptive names!)
+
+
+
+
+
+<hr>
+
+<details><summary></summary>
+  <p>
+  https://www.programcreek.com/python/example/87926/astropy.coordinates.match_coordinates_sky
+  </p>
+</details>
