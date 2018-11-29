@@ -47,6 +47,8 @@
 
 <details><summary></summary>
   <p>
-  https://www.programcreek.com/python/example/87926/astropy.coordinates.match_coordinates_sky
+  - http://docs.astropy.org/en/stable/coordinates/matchsep.html#matching-catalogs
+
+  - https://www.programcreek.com/python/example/87926/astropy.coordinates.match_coordinates_sky
   </p>
 </details>
