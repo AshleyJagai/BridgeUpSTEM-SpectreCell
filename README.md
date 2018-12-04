@@ -8,7 +8,7 @@
 Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a small group of rebels that were key to the downfall of the Galactic Empire. They were led by ace engineer, fearless pilot, and amazing strategist Hera Syndulla on her starship, the Ghost. The Spectre Cell's persistence and eventual influence directly contributed to the development and success of the Rebel Alliance by becoming one of the first cells to join upon its formation.
 
 <hr>
-
+<br />
 <div align="center">
   <h3>Spectres</h3>
   <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Ashley &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Indira &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Oniva &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Veronika &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Vithya &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Zoe &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
