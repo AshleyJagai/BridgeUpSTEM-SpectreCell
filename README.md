@@ -8,7 +8,12 @@
 Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a small group of rebels that were key to the downfall of the Galactic Empire. They were led by ace engineer, fearless pilot, and amazing strategist Hera Syndulla on her starship, the Ghost. The Spectre Cell's persistence and eventual influence directly contributed to the development and success of the Rebel Alliance by becoming one of the first cells to join upon its formation.
 
 <hr>
-<div align="center"><h3>Spectres</h3><p>Ashley</p><p>Indira</p><p>Oniva</p><p>Veronika</p><p>Vithya</p><p>Zoe</p></div>
+
+<div align="center">
+  <h3>Spectres</h3>
+  <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Ashley &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Indira &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Oniva &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Veronika &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Vithya &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Zoe &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+</div>
+<br />
 
 <hr>
 
@@ -39,7 +44,7 @@ Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a small gr
   | d14 |November 22 |Thursday | **No Session Today** |
   | d15 |November 27 |Tuesday | [Reconfiguring Atom](units/unit_2/d15/notes/reconfig.md)| [GAIAAAAAAAAAAAAAAHHHHHHHH!!!!!!!!!](units/unit_2/d15/labs/gaia.md)|
   | d16 |November 29 |Thursday | [Trello Board](units/unit_2/d16/notes/trello.md)| [Project Code Cont'd](units/unit_2/d16/labs/projectpt1.md)|
-  | d17 |December 4 |Tuesday | [](units/unit_2/d17/notes)| [](units/unit_2/d17/labs)|
+  | d17 |December 4 |Tuesday | [](units/unit_2/d17/notes)| [Project Build: day 3](units/unit_2/d17/labs/projectpt1.md))|
   | d18 |December 6 |Thursday | [](units/unit_2/d18/notes)| [](units/unit_2/d18/labs)|
   | d19 |December 11 |Tuesday | [](units/unit_2/d19/notes)| [](units/unit_2/d19/labs)|
   | d20 |December 13 |Thursday | **Presentation Skills Workshop** |
