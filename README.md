@@ -10,7 +10,7 @@ Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a small gr
 <hr>
 <div align="center">
   <h3>Spectres</h3>
-  <p>&nbsp; &nbsp; &nbsp; Ashley &nbsp; &nbsp; &nbsp; Indira &nbsp; &nbsp; &nbsp; Oniva &nbsp; &nbsp; &nbsp; Veronika &nbsp; &nbsp; &nbsp; Vithya &nbsp; &nbsp; &nbsp; Zoe &nbsp; &nbsp; &nbsp;</p>
+  <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Ashley &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Indira &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Oniva &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Veronika &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Vithya &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Zoe &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
 </div>
 
 <hr>
