@@ -98,7 +98,7 @@ new_objects_dec = coord.Angle(new_objects['DEC'].values*u.degree)
 fig = plt.figure(figsize=(14,12))
 ax = fig.add_subplot(111, projection="mollweide")
 ax.set_facecolor('#17303F')
-# plt.grid(True)
+plt.grid(True)
 
 ax.scatter(db_ra.radian, db_dec.radian, color="#E5E5E5", alpha=.8, edgecolors='face')
 ax.scatter(matches_ra.radian, matches_dec.radian, color="#F24333")
