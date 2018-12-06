@@ -35,11 +35,15 @@ db_sources = db.query('SELECT * FROM sources', fmt='pandas')
 # ===============================================
 
 # matches will store gaia data for objects in BDNYC database
-matches = pd.DataFrame()
+matches = pd.DataFrame(columns = gaia_catalogue.columns.values)
 # new_objects will store gaia data for objects that do not exist in BDNYC database
-new_objects = pd.DataFrame()
+new_objects = pd.DataFrame(columns = gaia_catalogue.columns.values)
 
 
+matches
+
+
+new_objects
 
 
 # ===============================================
@@ -47,10 +51,14 @@ new_objects = pd.DataFrame()
 # ===============================================
 
 for i in range(len(gaia_catalogue)):
-    # print(i, gaia_catalogue['RA'].loc[[i]], gaia_catalogue['DEC'].loc[[i]])
-    for j in range(len(db_sources)):
-        # print(j) DONT PRINT THIS
-
+    if len(db.search((gaia_catalogue["RA"][i], gaia_catalogue["DEC"][i]), 'sources', radius=0.00084, fetch = True > 0)):
+        # print (len(db.search((gaia_catalogue["RA"][i], gaia_catalogue["DEC"][i]), 'sources', radius=0.00084, fetch = True)))
+        matches = matches.append(gaia_catalogue.loc[[i]])
+    else:
+        new_objects = new_objects.append(gaia_catalogue.loc[[i]])
+gaia_catalogue.columns
+gaia_catalogue["RA"][5]
+gaia_catalogue["DEC"][5]
 
 
 
@@ -65,5 +73,9 @@ len(db_sources)
 
 # prints single row of gaia_catalogue
 gaia_catalogue.loc[[0]]
+
 # prints first 5 rows of gaia_catalogue
 gaia_catalogue.head()
+
+matches.head()
+matches
