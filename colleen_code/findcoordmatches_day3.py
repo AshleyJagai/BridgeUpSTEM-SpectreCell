@@ -47,9 +47,11 @@ new_objects = pd.DataFrame()
 # ===============================================
 
 for i in range(len(gaia_catalogue)):
-    # print(i, gaia_catalogue['RA'].loc[[i]], gaia_catalogue['DEC'].loc[[i]])
-    for j in range(len(db_sources)):
-        # print(j) DONT PRINT THIS
+    if len(db.search((gaia_catalogue['RA'][i], gaia_catalogue['DEC'][i]), 'sources', radius=0.00084, fetch=True)) > 0:
+        matches = matches.append(gaia_catalogue.loc[[i]])
+        # print(len(db.search((gaia_catalogue['RA'][i], gaia_catalogue['DEC'][i]), 'sources', radius=0.00084, fetch=True)))
+    else:
+        new_objects = new_objects.append(gaia_catalogue.loc[[i]])
 
 
 

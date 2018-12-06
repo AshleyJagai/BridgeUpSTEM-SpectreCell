@@ -35,9 +35,12 @@ db_sources = db.query('SELECT * FROM sources', fmt='pandas')
 # ===============================================
 
 # matches will store gaia data for objects in BDNYC database
-matches = pd.DataFrame(columns=gaia_catalogue.columns.values)
+matches = pd.DataFrame(columns = gaia_catalogue.columns.values)
+print (matches.columns)
 # new_objects will store gaia data for objects that do not exist in BDNYC database
-new_objects = pd.DataFrame(columns=gaia_catalogue.columns.values)
+new_objects = pd.DataFrame(columns = gaia_catalogue.columns.values)
+print (new_objects.columns)
+
 
 
 # ===============================================
@@ -45,19 +48,19 @@ new_objects = pd.DataFrame(columns=gaia_catalogue.columns.values)
 # ===============================================
 
 for i in range(len(gaia_catalogue)):
-    if len(db.search((gaia_catalogue['RA'][i], gaia_catalogue['DEC'][i]), 'sources', radius=0.00084, fetch=True)) > 0:
+    #db.search((338.673, 40.694), "sources", radius=5)
+    #print (gaia_catalogue["RA"][i],gaia_catalogue["DEC"][i])
+    if (len(db.search((gaia_catalogue["RA"][i],gaia_catalogue["DEC"][i]),"sources",radius = 0.00084, fetch = True))) > 0:
+        #print (len(db.search((gaia_catalogue["RA"][i],gaia_catalogue["DEC"][i]),"sources",radius = 0.00084, fetch = True)))
         matches = matches.append(gaia_catalogue.loc[[i]])
-        # print(len(db.search((gaia_catalogue['RA'][i], gaia_catalogue['DEC'][i]), 'sources', radius=0.00084, fetch=True)))
     else:
         new_objects = new_objects.append(gaia_catalogue.loc[[i]])
-
-gaia_catalogue
+print (matches.head)
+len(matches)
 
 # ===============================================
 # Workspace
 # ===============================================
-
-
 
 # length of db_sources
 len(db_sources)
@@ -66,38 +69,3 @@ len(db_sources)
 gaia_catalogue.loc[[0]]
 # prints first 5 rows of gaia_catalogue
 gaia_catalogue.head()
-
-# ===============================================
-# Plotting coordinates
-# ===============================================
-
-import astropy.coordinates as coord
-import astropy.units as u
-import matplotlib.pyplot as plt
-import numpy as np
-
-
-#
-db_ra = coord.Angle(pd.to_numeric(db_sources['ra']).fillna(np.nan).values*u.degree)
-db_ra = db_ra.wrap_at(180*u.degree)
-db_dec = coord.Angle(pd.to_numeric(db_sources['dec']).fillna(np.nan).values*u.degree)
-
-
-matches_ra = coord.Angle(matches['RA'].values*u.degree)
-matches_ra = matches_ra.wrap_at(180*u.degree)
-matches_dec = coord.Angle(matches['DEC'].values*u.degree)
-
-new_objects_ra = coord.Angle(new_objects['RA'].values*u.degree)
-new_objects_ra = new_objects_ra.wrap_at(180*u.degree)
-new_objects_dec = coord.Angle(new_objects['DEC'].values*u.degree)
-
-
-
-fig = plt.figure(figsize=(14,12))
-ax = fig.add_subplot(111, projection="mollweide")
-ax.set_facecolor('#17303F')
-plt.grid(True)
-
-ax.scatter(db_ra.radian, db_dec.radian, color="#E5E5E5", alpha=.8, edgecolors='face')
-ax.scatter(matches_ra.radian, matches_dec.radian, color="#F24333")
-ax.scatter(new_objects_ra.radian, new_objects_dec.radian, color="#E3B505")
