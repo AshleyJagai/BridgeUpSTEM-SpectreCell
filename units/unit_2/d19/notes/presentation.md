@@ -34,10 +34,10 @@ Let's brainstorm on our [shared presentation doc ](https://docs.google.com/docum
     - what are some visualizations we can use?
 
   5. Conclusion
-  
-    - Summary
 
-    - Future Work
+      - Summary
+
+      - Future Work
 
 
 ## Shared [presentation slides ](https://docs.google.com/presentation/d/1fief8a1b59gv40krHDFX1gMUbeQwiJZZgoOA8WfaD30/edit?usp=sharing)
