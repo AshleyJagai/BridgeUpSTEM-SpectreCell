@@ -46,7 +46,7 @@ Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a small gr
   | d16 |November 29 |Thursday | [Trello Board](units/unit_2/d16/notes/trello.md)| [Project Build: day 2](units/unit_2/d16/labs/projectpt1.md)|
   | d17 |December 4 |Tuesday | [](units/unit_2/d17/notes)| [Project Build: day 3](units/unit_2/d17/labs/projectpt1.md)|
   | d18 |December 6 |Thursday | [](units/unit_2/d18/notes)| [Project Build: day 4](units/unit_2/d18/labs/projectpt1.md)|
-  | d19 |December 11 |Tuesday | [**Work on Presentation**](units/unit_2/d19/notes)| [](units/unit_2/d19/labs)|
+  | d19 |December 11 |Tuesday | [Presentation Prep: day 1](units/unit_2/d19/notes/presentation.md)| [](units/unit_2/d19/labs)|
   | d20 |December 13 |Thursday | **Presentation Skills Workshop** |
   | d21 |December 18 |Tuesday | **Practice Presentation** |
   | d22 |December 20 |Thursday | **Winter Presentations** |
