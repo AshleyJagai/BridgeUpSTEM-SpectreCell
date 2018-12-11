@@ -6,9 +6,11 @@ Let's brainstorm on our [shared presentation doc ](https://docs.google.com/docum
 
 ## Presentation Outline
   1. Introduction
+
     - who are we?
 
   2. Background
+
     - what is the problem? (our motivation!)
 
     - why is it important?
@@ -16,6 +18,7 @@ Let's brainstorm on our [shared presentation doc ](https://docs.google.com/docum
     - what are we going to do about it?
 
   3. Materials and Methods
+
     - what have we learned?
 
     - how have we learned?
@@ -25,11 +28,13 @@ Let's brainstorm on our [shared presentation doc ](https://docs.google.com/docum
     - why are we doing things this way?
 
   4. Data and Results
+
     - what kind of data are we working with?
 
     - what are some visualizations we can use?
 
   5. Conclusion
+  
     - Summary
 
     - Future Work
