@@ -43,8 +43,6 @@ new_objects = pd.DataFrame(columns=gaia_catalogue.columns.values)
 # ===============================================
 # sort each row of gaia data into matches/new_objects using celestial coordinates: right ascension (ra/RA) and declination (dec/DEC)
 # ===============================================
-len(db.search((gaia_catalogue['RA'][5], gaia_catalogue['DEC'][5]), 'sources', radius=0.00084))
-gaia_catalogue['RA'][5]
 
 for i in range(len(gaia_catalogue)):
     if len(db.search((gaia_catalogue['RA'][i], gaia_catalogue['DEC'][i]), 'sources', radius=0.00084, fetch=True)) > 0:
