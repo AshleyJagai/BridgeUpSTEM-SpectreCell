@@ -98,6 +98,9 @@ ax = fig.add_subplot(111, projection="mollweide")
 ax.set_facecolor('#17303F')
 plt.grid(True)
 
-ax.scatter(db_ra.radian, db_dec.radian, color="#E5E5E5", alpha=.8, edgecolors='face')
-ax.scatter(matches_ra.radian, matches_dec.radian, color="#F24333")
-ax.scatter(new_objects_ra.radian, new_objects_dec.radian, color="#E3B505")
+
+ax.scatter(db_ra.radian, db_dec.radian, color="#E5E5E5", alpha=.8, edgecolors='face', label='in BDNYC database')
+ax.scatter(matches_ra.radian, matches_dec.radian, color="#F24333", label='in BDNYC database and GAIA dataset')
+ax.scatter(new_objects_ra.radian, new_objects_dec.radian, color="#E3B505", label='in GAIA dataset')
+ax.legend(loc=4)
+plt.savefig('radec.png')
