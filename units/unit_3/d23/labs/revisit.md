@@ -5,7 +5,10 @@
 
   - pull from upstream
 
-  - open up [findcoordmatches.py](project_code/findcoordmatches.py) and inspect changes
+  - open repo in atom
+      - `atom .`
+
+  - find `project_code/findcoordmatches.py `and inspect changes
 
 <hr>
 
