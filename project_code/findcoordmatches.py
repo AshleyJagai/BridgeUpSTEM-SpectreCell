@@ -3,8 +3,50 @@
 # ===============================================
 import pandas as pd
 from astrodbkit import astrodb
+import astropy.coordinates as coord
+import astropy.units as u
+import matplotlib.pyplot as plt
+import numpy as np
 
 
+
+
+# ===============================================
+# function definitions
+# ===============================================
+
+def matches_sortCSV(gaia_catalogue, db):
+    # ===============================================
+    # create new empty dataframes to store gaia data
+    # ===============================================
+
+    # matches will store gaia data for objects in BDNYC database
+    matches = pd.DataFrame(columns=gaia_catalogue.columns.values)
+    # new_objects will store gaia data for objects that do not exist in BDNYC database
+    new_objects = pd.DataFrame(columns=gaia_catalogue.columns.values)
+
+    # ===============================================
+    # sort each row of gaia data into matches/new_objects using celestial coordinates: right ascension (ra/RA) and declination (dec/DEC)
+    # ===============================================
+    for i in range(len(gaia_catalogue)):
+        if len(db.search((gaia_catalogue['RA'][i], gaia_catalogue['DEC'][i]), 'sources', radius=0.00278, fetch=True)) > 0:
+            matches = matches.append(gaia_catalogue.loc[[i]])
+        else:
+            new_objects = new_objects.append(gaia_catalogue.loc[[i]])
+
+    return matches, new_objects
+
+def saveCSVfiles(matches, new_objects):
+    matches.to_csv('matches.csv')
+    new_objects.to_csv('new_objects.csv')
+
+    print('matches and new_objects saved as CSV files.')
+
+
+
+##################################################
+# CODE STARTS HERE
+##################################################
 
 
 # ===============================================
@@ -18,10 +60,8 @@ db = astrodb.Database('BDNYCdb_practice/bdnycdev_copy.db')
 
 
 # load matches and new_objects csvs
-# insert code here
-#
-#
-#
+matches = pd.read_csv('matches.csv')
+new_objects = pd.read_csv('new_objects.csv')
 
 
 # ===============================================
@@ -33,26 +73,10 @@ db_sources = db.query('SELECT * FROM sources', fmt='pandas')
 
 
 
-# ===============================================
-# create new empty dataframes to store gaia data
-# ===============================================
-
-# matches will store gaia data for objects in BDNYC database
-matches = pd.DataFrame(columns=gaia_catalogue.columns.values)
-# new_objects will store gaia data for objects that do not exist in BDNYC database
-new_objects = pd.DataFrame(columns=gaia_catalogue.columns.values)
 
 
-# ===============================================
-# sort each row of gaia data into matches/new_objects using celestial coordinates: right ascension (ra/RA) and declination (dec/DEC)
-# ===============================================
 
-for i in range(len(gaia_catalogue)):
-    if len(db.search((gaia_catalogue['RA'][i], gaia_catalogue['DEC'][i]), 'sources', radius=0.00084, fetch=True)) > 0:
-        matches = matches.append(gaia_catalogue.loc[[i]])
-        # print(len(db.search((gaia_catalogue['RA'][i], gaia_catalogue['DEC'][i]), 'sources', radius=0.00084, fetch=True)))
-    else:
-        new_objects = new_objects.append(gaia_catalogue.loc[[i]])
+
 
 
 # ===============================================
@@ -66,14 +90,16 @@ for i in range(len(gaia_catalogue)):
 # prints first 5 rows of gaia_catalogue
 # gaia_catalogue.head()
 
+matches, new_objects = matches_sortCSV(gaia_catalogue, db)
+
+saveCSVfiles(matches, new_objects)
+
+
+len(matches)
+
 # ===============================================
 # Plotting coordinates
 # ===============================================
-
-import astropy.coordinates as coord
-import astropy.units as u
-import matplotlib.pyplot as plt
-import numpy as np
 
 # converting BDNYC database coordinates for plot
 db_ra = coord.Angle(pd.to_numeric(db_sources['ra']).fillna(np.nan).values*u.degree)
