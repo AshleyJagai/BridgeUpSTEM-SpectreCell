@@ -11,11 +11,11 @@ See slack for link to zoom meeting.
 
 Remind yourself of SQL syntax by completing some quizzes:
 
-    1. [Select I](https://sqlzoo.net/wiki/SELECT_Quiz)
+1. [Select I](https://sqlzoo.net/wiki/SELECT_Quiz)
 
-    2. [Select II](https://sqlzoo.net/wiki/BBC_QUIZ)
+2. [Select II](https://sqlzoo.net/wiki/BBC_QUIZ)
 
-    3. [Join](https://sqlzoo.net/wiki/JOIN_Quiz)
+3. [Join](https://sqlzoo.net/wiki/JOIN_Quiz)
 
 
 <br/><hr><br/><br/>
@@ -41,19 +41,19 @@ Complete the [Famous People](https://www.khanacademy.org/computing/computer-prog
 
 ## Modifying Databases Tutorial
 
-    1. [Using SQL to update a database](https://www.khanacademy.org/computing/computer-programming/sql/modifying-databases-with-sql/a/using-sql-to-update-a-database)
+1. [Using SQL to update a database](https://www.khanacademy.org/computing/computer-programming/sql/modifying-databases-with-sql/a/using-sql-to-update-a-database)
 
-    2. [Changing rows with UPDATE and DELETE](https://www.khanacademy.org/computing/computer-programming/sql/modifying-databases-with-sql/pt/changing-rows-with-update-and-delete)
+2. [Changing rows with UPDATE and DELETE](https://www.khanacademy.org/computing/computer-programming/sql/modifying-databases-with-sql/pt/changing-rows-with-update-and-delete)
 
-    3. [Challenge: Dynamic Documents](https://www.khanacademy.org/computing/computer-programming/sql/modifying-databases-with-sql/pc/challenge-dynamic-documents)
+3. [Challenge: Dynamic Documents](https://www.khanacademy.org/computing/computer-programming/sql/modifying-databases-with-sql/pc/challenge-dynamic-documents)
 
-    4. [Altering tables after creation](https://www.khanacademy.org/computing/computer-programming/sql/modifying-databases-with-sql/pt/altering-tables-after-creation)
+4. [Altering tables after creation](https://www.khanacademy.org/computing/computer-programming/sql/modifying-databases-with-sql/pt/altering-tables-after-creation)
 
-    5. [Challenge: Clothing alterations](https://www.khanacademy.org/computing/computer-programming/sql/modifying-databases-with-sql/pc/challenge-clothing-alterations)
+5. [Challenge: Clothing alterations](https://www.khanacademy.org/computing/computer-programming/sql/modifying-databases-with-sql/pc/challenge-clothing-alterations)
 
-    6. [Make your SQL safer](https://www.khanacademy.org/computing/computer-programming/sql/modifying-databases-with-sql/a/make-your-sql-safer)
+6. [Make your SQL safer](https://www.khanacademy.org/computing/computer-programming/sql/modifying-databases-with-sql/a/make-your-sql-safer)
 
-    7. [Project: App impersonator](https://www.khanacademy.org/computing/computer-programming/sql/modifying-databases-with-sql/pp/project-app-impersonator)
+7. [Project: App impersonator](https://www.khanacademy.org/computing/computer-programming/sql/modifying-databases-with-sql/pp/project-app-impersonator)
 
 
 
