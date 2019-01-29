@@ -18,49 +18,36 @@ Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a small gr
       <p>Ashley</p>
     </div>  
 
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
 
     <div align="center">
       <img src="https://lumiere-a.akamaihd.net/v1/images/v2ezra-scars-200x200px_e29a2603.png?img.lum.dolimg.com=img.lum.dolimg.com" width="50">  
       <p>Indira</p>
-    </div>  
-
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+    </div>    
 
     <div align="center">
       <img src="https://lumiere-a.akamaihd.net/v1/images/kanan-r3-200x200px_cc7f37cd.png?img.lum.dolimg.com=img.lum.dolimg.com" width="50">   
       <p>Oniva</p>
     </div>  
 
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-
     <div align="center">
       <img src="https://lumiere-a.akamaihd.net/v1/images/v2hera-helmet-200x200px_f643940d.png?img.lum.dolimg.com=img.lum.dolimg.com" width="50">
       <p>Veronika</p>
     </div>  
 
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-
     <div align="center">
       <img src="https://lumiere-a.akamaihd.net/v1/images/v2sabine-happy-200x200px_0004f40c.png?img.lum.dolimg.com=img.lum.dolimg.com" width="50">  
       <p>Vythia</p>
     </div>  
-
-    &nbsp; &nbsp; &nbsp; &nbsp;
-
+    
     <div align="center">
       <img src="https://lumiere-a.akamaihd.net/v1/images/v2chopper-waving-200x200px_c4dcc95f.png?img.lum.dolimg.com=img.lum.dolimg.com" width="50">
       <p>Zoe</p>
     </div>  
 
   </p>
-
-  <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  Ashley &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Indira &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Oniva &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Veronika &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Vithya &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Zoe &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-
-
-  </p>
 </div>
+
 <br />
 
 <hr>
