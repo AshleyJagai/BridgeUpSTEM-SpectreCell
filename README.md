@@ -57,12 +57,12 @@ Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a small gr
   |:---:|:-----------:|:-------:|:-----------:|:-----------:|
   | d23  |January 3 |Thursday | [Admin Stuff](units/unit_3/d23/notes/adminstuff.md)| [Revisit Project Code](units/unit_3/d23/labs/revisit.md)|
   | d24  |January 8 |Tuesday | [](units/unit_3/d24/notes)| [More SQL fun!](units/unit_3/d24/labs/SQLcontd.md)|
-  | d25  |January 10 |Thursday | [](units/unit_3/d25/notes)| [](units/unit_3/d25/labs)|
-  | d26  |January 15 |Tuesday | [](units/unit_3/d26/notes)| [](units/unit_3/d26/labs)|
-  | d27  |January 17 |Thursday | [](units/unit_3/d27/notes)| [](units/unit_3/d27/labs)|
-  | d28  |January 22 |Tuesday | [](units/unit_3/d28/notes)| [](units/unit_3/d28/labs)|
-  | d29  |January 24 |Thursday | [](units/unit_3/d29/notes)| [](units/unit_3/d29/labs)|
-  | d30  |January 29 |Tuesday | [](units/unit_3/d30/notes)| [](units/unit_3/d30/labs)|
+  | d25  |January 10 |Thursday | [](units/unit_3/d25/notes)| [More SQL fun Cont'd](units/unit_3/d24/labs/SQLcontd.md)|
+  | d26  |January 15 |Tuesday | [](units/unit_3/d26/notes)| [Code Build](units/unit_3/d26/labs)|
+  | d27  |January 17 |Thursday | [](units/unit_3/d27/notes)| [Code Build](units/unit_3/d27/labs)|
+  | d28  |January 22 |Tuesday | [Visit from Betsy Hernandez (AMNH)](units/unit_3/d28/notes)| [Code Build](units/unit_3/d28/labs)|
+  | d29  |January 24 |Thursday | [](units/unit_3/d29/notes)| [Code Build](units/unit_3/d29/labs)|
+  | d30  |January 29 |Tuesday | [Chat with Katie Cleary (Software Engineer)](units/unit_3/d30/notes)| [Code Build](units/unit_3/d30/labs)|
   | d31 |January 31 |Thursday | [](units/unit_3/d31/notes)| [](units/unit_3/d31/labs)|
   | d32 |February 5 |Tuesday | **No Session Today** |
   | d33 |February 7 |Thursday | [](units/unit_3/d33/notes)| [](units/unit_3/d33/labs)|

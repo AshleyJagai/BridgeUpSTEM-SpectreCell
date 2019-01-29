@@ -141,3 +141,10 @@ for i in range(0,len(matches)):
 
 # add data to BDNYC database
 db.add_data(data, 'sources')
+
+
+
+# Add G_magnitude, BP(blue photometry), RP(red photometry)--not flux
+# New csv for questionable objects with comments column
+    # Triple entry is parallax for higher mass star (not the brown dwarf)
+# Try using ra and dec (within 10 arcseconds)
