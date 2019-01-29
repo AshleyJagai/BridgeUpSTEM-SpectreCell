@@ -13,24 +13,24 @@ Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a small gr
   <h3>Spectres</h3>
 
   <p>
-    <div align="center" width="80px">
+    <div align="center" width=80px>
       <img src="https://camo.githubusercontent.com/0c2d531cd268cdd9aedffe43ea4989533a906272/68747470733a2f2f6c756d696572652d612e616b616d616968642e6e65742f76312f696d616765732f34355f7a65625f30323664656262382e706e673f696d672e6c756d2e646f6c696d672e636f6d3d696d672e6c756d2e646f6c696d672e636f6d" width="50">
-      <p width="80px">Ashley</p>
-    </div> <div align="center" width="80px">
+      <p width=80px>Ashley</p>
+    </div> <div align="center" width=80px>
       <img src="https://lumiere-a.akamaihd.net/v1/images/v2ezra-scars-200x200px_e29a2603.png?img.lum.dolimg.com=img.lum.dolimg.com" width="50">  
-      <p width="80px">Indira</p>
-    </div> <div align="center" width="80px">
+      <p width=80px>Indira</p>
+    </div> <div align="center" width=80px>
       <img src="https://lumiere-a.akamaihd.net/v1/images/kanan-r3-200x200px_cc7f37cd.png?img.lum.dolimg.com=img.lum.dolimg.com" width="50">   
-      <p width="80px">Oniva</p>
-    </div> <div align="center" width="80px">
+      <p width=80px>Oniva</p>
+    </div> <div align="center" width=80px>
       <img src="https://lumiere-a.akamaihd.net/v1/images/v2hera-helmet-200x200px_f643940d.png?img.lum.dolimg.com=img.lum.dolimg.com" width="50">
-      <p width="80px">Veronika</p>
-    </div> <div align="center" width="80px">
+      <p width=80px>Veronika</p>
+    </div> <div align="center" width=80px>
       <img src="https://lumiere-a.akamaihd.net/v1/images/v2sabine-happy-200x200px_0004f40c.png?img.lum.dolimg.com=img.lum.dolimg.com" width="50">  
-      <p width="80px">Vythia</p>
-    </div> <div align="center" width="80px">
+      <p width=80px>Vythia</p>
+    </div> <div align="center" width=80px>
       <img src="https://lumiere-a.akamaihd.net/v1/images/v2chopper-waving-200x200px_c4dcc95f.png?img.lum.dolimg.com=img.lum.dolimg.com" width="50">
-      <p width="80px">Zoe</p>
+      <p width=80px>Zoe</p>
     </div>  
   </p>
 </div>
