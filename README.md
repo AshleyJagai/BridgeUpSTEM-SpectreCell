@@ -11,7 +11,13 @@ Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a small gr
 <br />
 <div align="center">
   <h3>Spectres</h3>
-  <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![Zeb](https://lumiere-a.akamaihd.net/v1/images/v2ezra-scars-200x200px_e29a2603.png?img.lum.dolimg.com=img.lum.dolimg.com "Zeb") Ashley &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![Ezra](https://lumiere-a.akamaihd.net/v1/images/v2ezra-scars-200x200px_e29a2603.png?img.lum.dolimg.com=img.lum.dolimg.com "Ezra") Indira &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![Kanan](https://lumiere-a.akamaihd.net/v1/images/kanan-r3-200x200px_cc7f37cd.png?img.lum.dolimg.com=img.lum.dolimg.com "Kanan") Oniva &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![Hera](https://lumiere-a.akamaihd.net/v1/images/v2hera-helmet-200x200px_f643940d.png?img.lum.dolimg.com=img.lum.dolimg.com "Hera") Veronika &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![Sabine](https://lumiere-a.akamaihd.net/v1/images/v2sabine-happy-200x200px_0004f40c.png?img.lum.dolimg.com=img.lum.dolimg.com "Sabine") Vithya &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![Chopper](https://lumiere-a.akamaihd.net/v1/images/v2chopper-waving-200x200px_c4dcc95f.png?img.lum.dolimg.com=img.lum.dolimg.com "Chopper") Zoe &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+  <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+
+  ![Zeb](https://lumiere-a.akamaihd.net/v1/images/v2ezra-scars-200x200px_e29a2603.png?img.lum.dolimg.com=img.lum.dolimg.com "Zeb") Ashley &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![Ezra](https://lumiere-a.akamaihd.net/v1/images/v2ezra-scars-200x200px_e29a2603.png?img.lum.dolimg.com=img.lum.dolimg.com "Ezra") Indira &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![Kanan](https://lumiere-a.akamaihd.net/v1/images/kanan-r3-200x200px_cc7f37cd.png?img.lum.dolimg.com=img.lum.dolimg.com "Kanan") Oniva &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![Hera](https://lumiere-a.akamaihd.net/v1/images/v2hera-helmet-200x200px_f643940d.png?img.lum.dolimg.com=img.lum.dolimg.com "Hera") Veronika &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![Sabine](https://lumiere-a.akamaihd.net/v1/images/v2sabine-happy-200x200px_0004f40c.png?img.lum.dolimg.com=img.lum.dolimg.com "Sabine") Vithya &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![Chopper](https://lumiere-a.akamaihd.net/v1/images/v2chopper-waving-200x200px_c4dcc95f.png?img.lum.dolimg.com=img.lum.dolimg.com "Chopper") Zoe &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+
+  </p>
 </div>
 <br />
 
