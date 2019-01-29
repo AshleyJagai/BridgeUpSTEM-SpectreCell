@@ -9,7 +9,7 @@ Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a small gr
 
 <hr>
 <br />
-<div align="center">
+<div>
   <h3>Spectres</h3>
 
   <p>
