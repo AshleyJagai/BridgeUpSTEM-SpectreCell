@@ -8,43 +8,55 @@ import astropy.units as u
 import matplotlib.pyplot as plt
 import numpy as np
 
-# ===============================================
-# function defintions
-# ===============================================
+
+
+
+# ================================================
+# function definitions
+# ================================================
 
 def matches_sortCSV(gaia_catalogue, db):
-    matches = pd.DataFrame(columns = gaia_catalogue.columns.values)
-    new_objects = pd.DataFrame(columns = gaia_catalogue.columns.values)
+   # =============================================
+   # create new empty dataframes to store gaia data
+   # =============================================
 
-    for i in range(len(gaia_catalogue)):
-        if len(db.search((gaia_catalogue["RA"][i], gaia_catalogue["DEC"][i]), 'sources', radius=0.00278, fetch = True > 0)):
-            matches = matches.append(gaia_catalogue.loc[[i]])
-        else:
-            new_objects = new_objects.append(gaia_catalogue.loc[[i]])
-    return matches, new_objects
+   # matches will store gaia data for objects in BDNYC database
+   matches = pd.DataFrame(columns=gaia_catalogue.columns.values)
+   # new_objects will store gaia data for objects that do not exist in BDNYC database
+   new_objects = pd.DataFrame(columns=gaia_catalogue.columns.values)
 
-def save_CSVfiles(matches,new_objects):
-    matches.to_csv('matches.csv')
-    new_objects.to_csv('new_objects.csv')
+   # ===============================================
+   # sort each row of gaia data into matches/new_objects using celestial coordinates: right ascension (ra/RA) and declination (dec/DEC)
+   # ===============================================
+   for i in range(len(gaia_catalogue)):
+       if len(db.search((gaia_catalogue['RA'][i], gaia_catalogue['DEC'][i]), "sources", radius=0.00278, fetch=True)) > 0:
+           matches = matches.append(gaia_catalogue.loc[[i]])
+       else:
+           new_objects = new_objects.append(gaia_catalogue.loc[[i]])
 
-    print('matches and new_objects saved as CSV files.')
+   return matches, new_objects
+
+def saveCSVfiles(matches, new_objects):
+   matches.to_csv('matches.csv')
+   new_objects.to_csv('new_objects.csv')
+
+   print('matches and new_objects saved as CSV files.')
+
+   # import gaia csv
+   gaia_catalogue = pd.read_csv('gaia_data/all_catalog.csv')
+list(gaia_catalogue.columns())
 
 
-######################################################################################################
+
+
+##################################################
 # CODE STARTS HERE
-#####################################################################################################
-
-
-
-
+##################################################
 
 
 # ===============================================
 # import files needed
 # ===============================================
-
-# import gaia csv
-gaia_catalogue = pd.read_csv('gaia_data/all_catalog.csv')
 # import bdnyc database
 db = astrodb.Database('BDNYCdb_practice/bdnycdev_copy.db')
 
@@ -52,8 +64,6 @@ db = astrodb.Database('BDNYCdb_practice/bdnycdev_copy.db')
 # load matches and new_objects csvs
 matches = pd.read_csv('matches.csv')
 new_objects = pd.read_csv('new_objects.csv')
-#
-#
 
 
 # ===============================================
@@ -68,6 +78,9 @@ db_sources = db.query('SELECT * FROM sources', fmt='pandas')
 
 
 
+
+
+
 # ===============================================
 # Workspace
 # ===============================================
@@ -75,26 +88,21 @@ db_sources = db.query('SELECT * FROM sources', fmt='pandas')
 # len(db_sources)
 
 # prints single row of gaia_catalogue
-gaia_catalogue.loc[[0]]
-
-# prints first 5 rows of gaia_catalogue
-gaia_catalogue.head()
-
-matches.head()
-matches
-
 # gaia_catalogue.loc[[0]]
 # prints first 5 rows of gaia_catalogue
 # gaia_catalogue.head()
 
 matches, new_objects = matches_sortCSV(gaia_catalogue, db)
 
-save_CSVfiles(matches,new_objects)
+saveCSVfiles(matches, new_objects)
+
 
 len(matches)
+
 # ===============================================
 # Plotting coordinates
 # ===============================================
+
 # converting BDNYC database coordinates for plot
 db_ra = coord.Angle(pd.to_numeric(db_sources['ra']).fillna(np.nan).values*u.degree)
 db_ra = db_ra.wrap_at(180*u.degree)
@@ -119,3 +127,57 @@ ax.scatter(db_ra.radian, db_dec.radian, color="#E5E5E5", alpha=.8, edgecolors='f
 ax.scatter(matches_ra.radian, matches_dec.radian, color="#F24333", label='in BDNYC database and GAIA dataset')
 ax.scatter(new_objects_ra.radian, new_objects_dec.radian, color="#E3B505", label='in GAIA dataset')
 ax.legend(loc=4)
+
+gaia_catalogue.head(1)
+matches = pd.read_csv("matches.csv", index_col=0)
+new_objects = pd.read_csv("new_objects.csv", index_col=0)
+new_objects.SHORTNAME.values
+
+data=list ()
+data.append("shortname")
+print(data)
+data.append(list(new_objects.SHORTNAME.values))
+
+db.query("SELECT shortname FROM sources")
+
+len(db.query("SELECT shortname FROM sources"))
+
+db.add_data(data,"sources")
+
+len(data)
+
+matches.columns
+
+matches.SHORTNAME = matches.SHORTNAME.str[2:]
+
+matches.head()
+# create quary
+db.search(i,'sources', fetch = True)
+
+
+
+if db.search('0001+1535','sources', fetch = True)["id"]:
+    print("result")
+else:
+    print("no matches")
+
+for i in matches.SHORTNAME:
+     db.search(i,'sources', fetch = True)["id"][0]
+print(i)
+
+for i in matches.SHORTNAME:
+    if db.search(i,'sources', fetch = True)["id"]:
+        print(db.search(i,'sources', fetch = True)
+    else:
+        print("no match")
+
+for i in matches.SHORTNAME:
+    result = db.search( i ,'sources', fetch = True)['id']
+    if len(result) == 1:
+       data.append(result[0])
+    elif len(result) > 1:
+       print ("More than one match")
+    else:
+       print ("No matches")
+print (data)
+db.add_data(data, "sources")
