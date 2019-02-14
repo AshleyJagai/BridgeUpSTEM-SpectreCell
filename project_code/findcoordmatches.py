@@ -11,99 +11,46 @@ import numpy as np
 
 
 
-# ================================================
+# ===============================================
 # function definitions
-# ================================================
+# ===============================================
 
 def matches_sortCSV(gaia_catalogue, db):
-   # =============================================
-   # create new empty dataframes to store gaia data
-   # =============================================
+    # ===============================================
+    # create new empty dataframes to store gaia data
+    # ===============================================
 
-   # matches will store gaia data for objects in BDNYC database
-   matches = pd.DataFrame(columns=gaia_catalogue.columns.values)
-   # new_objects will store gaia data for objects that do not exist in BDNYC database
-   new_objects = pd.DataFrame(columns=gaia_catalogue.columns.values)
+    # matches will store gaia data for objects in BDNYC database
+    matches = pd.DataFrame(columns=gaia_catalogue.columns.values)
+    # new_objects will store gaia data for objects that do not exist in BDNYC database
+    new_objects = pd.DataFrame(columns=gaia_catalogue.columns.values)
 
-   # ===============================================
-   # sort each row of gaia data into matches/new_objects using celestial coordinates: right ascension (ra/RA) and declination (dec/DEC)
-   # ===============================================
-   for i in range(len(gaia_catalogue)):
-       if len(db.search((gaia_catalogue['RA'][i], gaia_catalogue['DEC'][i]), "sources", radius=0.00278, fetch=True)) > 0:
-           matches = matches.append(gaia_catalogue.loc[[i]])
-       else:
-           new_objects = new_objects.append(gaia_catalogue.loc[[i]])
+    needs_review = pd.DataFrame(columns=gaia_catalogue.columns.values)
+    # ===============================================
+    # sort each row of gaia data into matches/new_objects using celestial coordinates: right ascension (ra/RA) and declination (dec/DEC)
+    # ===============================================
+    for i in range(len(gaia_catalogue)):
+        if len(db.search((gaia_catalogue['RA'][i], gaia_catalogue['DEC'][i]), 'sources', radius=0.00278, fetch=True)) > 0:
+            matches = matches.append(gaia_catalogue.loc[[i]])
+        elif len(db.search((gaia_catalogue['RA'][i], gaia_catalogue['DEC'][i]), 'sources', radius=0.00278, fetch=True)) > 1:
+            needs_review = needs_review.append(gaia_catalogue.loc[[i]])
+        else:
+            new_objects = new_objects.append(gaia_catalogue.loc[[i]])
 
-   return matches, new_objects
+    return matches, new_objects, needs_review
 
-def saveCSVfiles(matches, new_objects):
-   matches.to_csv('matches.csv')
-   new_objects.to_csv('new_objects.csv')
+def saveCSVfiles(matches, new_objects, needs_review):
+    matches.to_csv('matches.csv')
+    new_objects.to_csv('new_objects.csv')
+    needs_review.to_csv('needs_review.csv')
 
-   print('matches and new_objects saved as CSV files.')
+    print('matches and new_objects saved as CSV files.')
 
-   # import gaia csv
-   gaia_catalogue = pd.read_csv('gaia_data/all_catalog.csv')
-list(gaia_catalogue.columns())
-
-
-
-
-##################################################
-# CODE STARTS HERE
-##################################################
-
-
-# ===============================================
-# import files needed
-# ===============================================
-# import bdnyc database
-db = astrodb.Database('BDNYCdb_practice/bdnycdev_copy.db')
-
-
-# load matches and new_objects csvs
-matches = pd.read_csv('matches.csv')
-new_objects = pd.read_csv('new_objects.csv')
-
-
-# ===============================================
-# variables needed
-# ===============================================
-
-# list all from sources into format of pandas stored as new variable
-db_sources = db.query('SELECT * FROM sources', fmt='pandas')
-
-
-
-
-
-
-
-
-
-# ===============================================
-# Workspace
-# ===============================================
-# length of db_sources
-# len(db_sources)
-
-# prints single row of gaia_catalogue
-# gaia_catalogue.loc[[0]]
-# prints first 5 rows of gaia_catalogue
-# gaia_catalogue.head()
-
-matches, new_objects = matches_sortCSV(gaia_catalogue, db)
-
-saveCSVfiles(matches, new_objects)
-
-
-len(matches)
-
+def plotCoords(db_sources, matches, new_objects):
 # ===============================================
 # Plotting coordinates
 # ===============================================
-
-# converting BDNYC database coordinates for plot
+    # converting BDNYC database coordinates for plot
 db_ra = coord.Angle(pd.to_numeric(db_sources['ra']).fillna(np.nan).values*u.degree)
 db_ra = db_ra.wrap_at(180*u.degree)
 db_dec = coord.Angle(pd.to_numeric(db_sources['dec']).fillna(np.nan).values*u.degree)
@@ -128,56 +75,67 @@ ax.scatter(matches_ra.radian, matches_dec.radian, color="#F24333", label='in BDN
 ax.scatter(new_objects_ra.radian, new_objects_dec.radian, color="#E3B505", label='in GAIA dataset')
 ax.legend(loc=4)
 
-gaia_catalogue.head(1)
-matches = pd.read_csv("matches.csv", index_col=0)
-new_objects = pd.read_csv("new_objects.csv", index_col=0)
-new_objects.SHORTNAME.values
 
-data=list ()
-data.append("shortname")
-print(data)
-data.append(list(new_objects.SHORTNAME.values))
 
-db.query("SELECT shortname FROM sources")
+##################################################
+# CODE STARTS HERE
+##################################################
 
-len(db.query("SELECT shortname FROM sources"))
 
-db.add_data(data,"sources")
+# ===============================================
+# import files needed
+# ===============================================
 
-len(data)
+# import gaia csv
+gaia_catalogue = pd.read_csv('gaia_data/all_catalog.csv')
+# import bdnyc database
+db = astrodb.Database('BDNYCdb_practice/bdnycdev_copy.db')
 
-matches.columns
 
+# load matches and new_objects csvs
+matches = pd.read_csv('matches.csv', index_col=0)
+new_objects = pd.read_csv('new_objects.csv', index_col=0)
+needs_review = pd.read_csv('needs_review.csv', index_col=0)
+# ===============================================
+# variables needed
+# ===============================================
+
+# list all from sources into format of pandas stored as new variable
+# db_sources = db.query('SELECT * FROM sources', fmt='pandas')
+
+
+# ===============================================
+# sort data into matches and not matches and save as new csv files
+# ===============================================
+
+matches, new_objects, needs_review = matches_sortCSV(gaia_catalogue, db)
+saveCSVfiles(matches, new_objects, needs_review)
+# ===============================================
+# Workspace
+# ===============================================
+
+#drop empty spaces and first character J from shortname
 matches.SHORTNAME = matches.SHORTNAME.str[2:]
 
-matches.head()
-# create quary
-db.search(i,'sources', fetch = True)
+# create new empty list to store data we want to add to database
+data = list()
 
-
-
-if db.search('0001+1535','sources', fetch = True)["id"]:
-    print("result")
-else:
-    print("no matches")
-
+# append the column name (as it's written in the BDNYC database) to match on the appropriate column
+data.append(['source_id' , 'parallax' , 'parallax_unc' , 'publication_shortname' , 'adopted' , 'comments'])
+print(data) []['source_id' , 'parallax' , 'parallax_unc' , 'publication_shortname' , 'adopted' , 'comments']]
+ # loop through the shortnames from our "matches" dataframe
 for i in matches.SHORTNAME:
-     db.search(i,'sources', fetch = True)["id"][0]
-print(i)
-
-for i in matches.SHORTNAME:
-    if db.search(i,'sources', fetch = True)["id"]:
-        print(db.search(i,'sources', fetch = True)
+# search the BDNYCdb sources table for each shortname and store the results in a variable
+    results = db.search(i, "sources", fetch=True)['id']
+    # if there is only ONE result, append the id to our list variable "data"
+    if (len(results)==1):
+        data.append(results[0])
+    elif (len(results)>1):
+    # if there is MORE THAN ONE result, just print a note
+        print('more than one match')
     else:
-        print("no match")
+    # if there are NO results, print a note
+        print('no matches')
 
-for i in matches.SHORTNAME:
-    result = db.search( i ,'sources', fetch = True)['id']
-    if len(result) == 1:
-       data.append(result[0])
-    elif len(result) > 1:
-       print ("More than one match")
-    else:
-       print ("No matches")
-print (data)
-db.add_data(data, "sources")
+# add data to BDNYC database
+db.add_data(data, 'sources')
