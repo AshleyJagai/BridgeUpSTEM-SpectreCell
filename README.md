@@ -11,8 +11,28 @@ Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a small gr
 <br />
 <div align="center">
   <h3>Spectres</h3>
-  <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Ashley &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Indira &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Oniva &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Veronika &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Vithya &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Zoe &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+
+  <div><div align="center" width=80px>
+      <img src="https://camo.githubusercontent.com/0c2d531cd268cdd9aedffe43ea4989533a906272/68747470733a2f2f6c756d696572652d612e616b616d616968642e6e65742f76312f696d616765732f34355f7a65625f30323664656262382e706e673f696d672e6c756d2e646f6c696d672e636f6d3d696d672e6c756d2e646f6c696d672e636f6d" width="50">
+      <p width="auto">Ashley</p>
+    </div> <div align="center" width=80px>
+      <img src="https://lumiere-a.akamaihd.net/v1/images/v2ezra-scars-200x200px_e29a2603.png?img.lum.dolimg.com=img.lum.dolimg.com" width="50">  
+      <p width="auto">Indira</p>
+    </div> <div align="center" width=80px>
+      <img src="https://lumiere-a.akamaihd.net/v1/images/kanan-r3-200x200px_cc7f37cd.png?img.lum.dolimg.com=img.lum.dolimg.com" width="50">   
+      <p width="auto">Oniva</p>
+    </div> <div align="center" width=80px>
+      <img src="https://lumiere-a.akamaihd.net/v1/images/v2hera-helmet-200x200px_f643940d.png?img.lum.dolimg.com=img.lum.dolimg.com" width="50">
+      <p width="auto">Veronika</p>
+    </div> <div align="center" width=80px>
+      <img src="https://lumiere-a.akamaihd.net/v1/images/v2sabine-happy-200x200px_0004f40c.png?img.lum.dolimg.com=img.lum.dolimg.com" width="50">  
+      <p width="auto">Vythia</p>
+    </div> <div align="center" width=80px>
+      <img src="https://lumiere-a.akamaihd.net/v1/images/v2chopper-waving-200x200px_c4dcc95f.png?img.lum.dolimg.com=img.lum.dolimg.com" width="50">
+      <p width="auto">Zoe</p>
+    </div></div>
 </div>
+
 <br />
 
 <hr>
@@ -57,12 +77,12 @@ Spectre Cell, also known as the Ghost Crew or Spectres, is made up of a small gr
   |:---:|:-----------:|:-------:|:-----------:|:-----------:|
   | d23  |January 3 |Thursday | [Admin Stuff](units/unit_3/d23/notes/adminstuff.md)| [Revisit Project Code](units/unit_3/d23/labs/revisit.md)|
   | d24  |January 8 |Tuesday | [](units/unit_3/d24/notes)| [More SQL fun!](units/unit_3/d24/labs/SQLcontd.md)|
-  | d25  |January 10 |Thursday | [](units/unit_3/d25/notes)| [](units/unit_3/d25/labs)|
-  | d26  |January 15 |Tuesday | [](units/unit_3/d26/notes)| [](units/unit_3/d26/labs)|
-  | d27  |January 17 |Thursday | [](units/unit_3/d27/notes)| [](units/unit_3/d27/labs)|
-  | d28  |January 22 |Tuesday | [](units/unit_3/d28/notes)| [](units/unit_3/d28/labs)|
-  | d29  |January 24 |Thursday | [](units/unit_3/d29/notes)| [](units/unit_3/d29/labs)|
-  | d30  |January 29 |Tuesday | [](units/unit_3/d30/notes)| [](units/unit_3/d30/labs)|
+  | d25  |January 10 |Thursday | [](units/unit_3/d25/notes)| [More SQL fun Cont'd](units/unit_3/d24/labs/SQLcontd.md)|
+  | d26  |January 15 |Tuesday | [](units/unit_3/d26/notes)| Code Build |
+  | d27  |January 17 |Thursday | [](units/unit_3/d27/notes)| Code Build |
+  | d28  |January 22 |Tuesday | [Visit from Betsy Hernandez (AMNH)](units/unit_3/d28/notes)| Code Build |
+  | d29  |January 24 |Thursday | [](units/unit_3/d29/notes)| Code Build |
+  | d30  |January 29 |Tuesday | [Chat with Katie Cleary (Software Engineer)](units/unit_3/d30/notes)| Code Build |
   | d31 |January 31 |Thursday | [](units/unit_3/d31/notes)| [](units/unit_3/d31/labs)|
   | d32 |February 5 |Tuesday | **No Session Today** |
   | d33 |February 7 |Thursday | [](units/unit_3/d33/notes)| [](units/unit_3/d33/labs)|
