@@ -53,9 +53,10 @@ def saveCSVfiles(matches, new_objects, needs_review):
     print('matches, new_objects, and needs_review saved as CSV files.')
 
 def plotCoords(db_sources, matches, new_objects):
-# ===============================================
-# Plotting coordinates
-# ===============================================
+
+    # ===============================================
+    # Plotting coordinates
+    # ===============================================
 
     # converting BDNYC database coordinates for plot
     db_ra = coord.Angle(pd.to_numeric(db_sources['ra']).fillna(np.nan).values*u.degree)
@@ -112,13 +113,11 @@ db = astrodb.Database('BDNYCdb_practice/bdnycdev_copy.db')
 # db_sources = db.query('SELECT * FROM sources', fmt='pandas')
 
 
-
 # ===============================================
 # sort data into matches and not matches and save as new csv files
 # ===============================================
 
-# matches, new_objects= matches_sortCSV(gaia_catalogue, db, save=False)
-
+# matches, new_objects= matches_sortCSV(gaia_catalogue, db)
 
 
 # ===============================================
@@ -131,24 +130,24 @@ db = astrodb.Database('BDNYCdb_practice/bdnycdev_copy.db')
 ##################################################
 
 # create new empty list to store data we want to add to database
-# parallax_data = list()
+parallax_data = list()
 
 # append the column name (as it's written in the BDNYC database) to match on the appropriate column
-# parallax_data.append(['source_id','parallax', 'parallax_unc','publication_shortname', 'adopted','comments'])
-# parallax_data
+parallax_data.append(['source_id','parallax', 'parallax_unc','publication_shortname', 'adopted','comments'])
+parallax_data
 
-# for i in range(len(matches)):
-#     parallax_data.append([int(matches.iloc[[i]]['source_id'].values[0]), matches.iloc[[i]]['PARALLAX'].values[0], matches.iloc[[i]]['PARALLAX_ERROR'].values[0], 'GaiaDR2', 1, 'added by SpectreCell'])
+for i in range(len(matches)):
+    parallax_data.append([int(matches.iloc[[i]]['source_id'].values[0]), matches.iloc[[i]]['PARALLAX'].values[0], matches.iloc[[i]]['PARALLAX_ERROR'].values[0], 'GaiaDR2', 1, 'added by SpectreCell'])
 
+parallax_data
 
 # add data to BDNYC database
-# db.add_data(parallax_data, 'parallaxes')
-
-# db.search("added by spectrecell", 'parallaxes')
+# db.search("added by SpectreCell", 'parallaxes')
 # len(db.search("added by spectrecell", 'parallaxes', fetch=True))
 # db.inventory(204)
 
-# db.modify("DELETE FROM parallaxes WHERE comments='added by SpectreCell'")
+# db.modify("DELETE FROM proper_motions WHERE comments='added by SpectreCell'")
+
 
 
 
@@ -159,15 +158,49 @@ db = astrodb.Database('BDNYCdb_practice/bdnycdev_copy.db')
 
 
 # create new empty list to store data we want to add to database
-# propermotions_data = list()
+propermotions_data = list()
 
 # append the column name (as it's written in the BDNYC database) to match on the appropriate column
-# propermotions_data.append(['source_id','proper_motion_ra', 'proper_motion_ra_unc','proper_motion_dec', 'proper_motion_dec_unc','publication_shortname', 'comments'])
-# print(propermotions_data)
+propermotions_data.append(['source_id','proper_motion_ra', 'proper_motion_ra_unc','proper_motion_dec', 'proper_motion_dec_unc','publication_shortname', 'comments'])
+print(propermotions_data)
 
-# for i in range(len(matches)):
-#     propermotions_data.append([matches.iloc[[i]]['source_id'].values[0], matches.iloc[[i]]['PMRA'].values[0], matches.iloc[[i]]['PMRA_ERROR'].values[0], matches.iloc[[i]]['PMDEC'].values[0], matches.iloc[[i]]['PMDEC_ERROR'].values[0],'GaiaDR2','added by SpectreCell'])
+for i in range(len(matches)):
+     propermotions_data.append([matches.iloc[[i]]['source_id'].values[0], matches.iloc[[i]]['PMRA'].values[0], matches.iloc[[i]]['PMRA_ERROR'].values[0], matches.iloc[[i]]['PMDEC'].values[0], matches.iloc[[i]]['PMDEC_ERROR'].values[0],'GaiaDR2','added by SpectreCell'])
+propermotions_data
+
+# add data to BDNYC database
+db.add_data(propermotions_data, 'proper_motions')
+
+
+matches.columns
+
+##################################################
+# Photomerty table
+##################################################
+
+# create new empty list to store data we want to add to databas
+Photometry_dataBP = list()
+# append the column name (as it's written in the BDNYC database) to match on the appropriate column
+Photometry_dataBP.append(['source_id','magnitude','magnitude_unc','publication_shortname','band', 'comments'])
+print(Photometry_dataBP)
+for i in range(len(matches)):
+     Photometry_dataBP.append([matches.iloc[[i]]['source_id'].values[0],matches.iloc[[i]]['PHOT_BP_MEAN_MAG'].values[0],matches.iloc[[i]]['PHOT_BP_MEAN_MAG_ERROR'].values[0],'GaiaDR2_BP','added by SpectreCell'])
+len(Photometry_dataBP)
+
+Photometry_dataG = list()
+Photometry_dataG.append(['source_id','magnitude','magnitude_unc','publication_shortname','band', 'comments'])
+print(Photometry_dataG)
+for i in range(len(matches)):
+     Photometry_dataG.append([matches.iloc[[i]]['source_id'].values[0],matches.iloc[[i]]['PHOT_G_MEAN_MAG'].values[0],matches.iloc[[i]]['PHOT_G_MEAN_MAG_ERROR'].values[0],'GaiaDR2_G','added by SpectreCell'])
+len(Photometry_dataG)
+
+Photometry_dataRP = list()
+Photometry_dataRP.append(['source_id','magnitude','magnitude_unc','publication_shortname','band', 'comments'])
+print(Photometry_dataRP)
+for i in range(len(matches)):
+    Photometry_dataRP.append([matches.iloc[[i]]['source_id'].values[0],  matches.iloc[[i]]['PHOT_RP_MEAN_MAG'].values[0],matches.iloc[[i]]['PHOT_RP_MEAN_MAG_ERROR'].values[0],'GaiaDR2_RP','added by SpectreCell'])
+len(Photometry_dataRP)
 
 
 # add data to BDNYC database
-# db.add_data(propermotions_data, 'proper_motions')
+# db.add_data(Photomerty_data, 'Photomerty')
