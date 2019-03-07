@@ -15,32 +15,42 @@ import numpy as np
 # function definitions
 # ===============================================
 
-def matches_sortCSV(gaia_catalogue, db):
+def matches_sortCSV(gaia_catalogue, db, save=False):
     # ===============================================
     # create new empty dataframes to store gaia data
     # ===============================================
 
     # matches will store gaia data for objects in BDNYC database
-    matches = pd.DataFrame(columns=gaia_catalogue.columns.values)
+    matches = pd.DataFrame(columns=np.insert(gaia_catalogue.columns.values, 0, 'source_id', axis=0))
+
     # new_objects will store gaia data for objects that do not exist in BDNYC database
     new_objects = pd.DataFrame(columns=gaia_catalogue.columns.values)
+    # needs_review will store gaia data for objects that have too many matched in the database and need further review
+    needs_review = pd.DataFrame(columns=gaia_catalogue.columns.values)
 
     # ===============================================
     # sort each row of gaia data into matches/new_objects using celestial coordinates: right ascension (ra/RA) and declination (dec/DEC)
     # ===============================================
     for i in range(len(gaia_catalogue)):
-        if len(db.search((gaia_catalogue['RA'][i], gaia_catalogue['DEC'][i]), 'sources', radius=0.00278, fetch=True)) > 0:
+        results=db.search((gaia_catalogue['RA'][i], gaia_catalogue['DEC'][i]), 'sources', radius=0.00278, fetch=True)
+        if len(results) == 1:
             matches = matches.append(gaia_catalogue.loc[[i]])
+            matches['source_id'].loc[i]=results['id'][0]
+        elif len(results)>1:
+        # if there is MORE THAN ONE result, just print a note
+            needs_review = needs_review.append(gaia_catalogue.loc[[i]])
         else:
             new_objects = new_objects.append(gaia_catalogue.loc[[i]])
 
+    if save==True:
+        saveCSVfiles(matches, new_objects, needs_review)
     return matches, new_objects
 
-def saveCSVfiles(matches, new_objects):
+def saveCSVfiles(matches, new_objects, needs_review):
     matches.to_csv('matches.csv')
     new_objects.to_csv('new_objects.csv')
-
-    print('matches and new_objects saved as CSV files.')
+    needs_review.to_csv('needs_review.csv')
+    print('matches, new_objects, and needs_review saved as CSV files.')
 
 def plotCoords(db_sources, matches, new_objects):
 # ===============================================
@@ -90,8 +100,8 @@ db = astrodb.Database('BDNYCdb_practice/bdnycdev_copy.db')
 
 
 # load matches and new_objects csvs
-matches = pd.read_csv('matches.csv', index_col=0)
-new_objects = pd.read_csv('new_objects.csv', index_col=0)
+# matches = pd.read_csv('matches.csv', index_col=0)
+# new_objects = pd.read_csv('new_objects.csv', index_col=0)
 
 
 # ===============================================
@@ -102,40 +112,62 @@ new_objects = pd.read_csv('new_objects.csv', index_col=0)
 # db_sources = db.query('SELECT * FROM sources', fmt='pandas')
 
 
+
 # ===============================================
 # sort data into matches and not matches and save as new csv files
 # ===============================================
 
-# matches, new_objects = matches_sortCSV(gaia_catalogue, db)
-# saveCSVfiles(matches, new_objects)
+# matches, new_objects= matches_sortCSV(gaia_catalogue, db, save=False)
+
 
 
 # ===============================================
 # Workspace
 # ===============================================
 
-#drop empty spaces and first character J from shortname
-matches.SHORTNAME = matches.SHORTNAME.str[2:]
+
+##################################################
+# Parallax table
+##################################################
 
 # create new empty list to store data we want to add to database
-data = list()
+# parallax_data = list()
 
 # append the column name (as it's written in the BDNYC database) to match on the appropriate column
-data.append('shortname')
+# parallax_data.append(['source_id','parallax', 'parallax_unc','publication_shortname', 'adopted','comments'])
+# parallax_data
 
- # loop through the shortnames from our "matches" dataframe
-for i in matches.SHORTNAME:
-    # search the BDNYCdb sources table for each shortname and store the results in a variable
-    results = db.search(i, "sources", fetch=True)['id']
-    # if there is only ONE result, append the id to our list variable "data"
-    if (len(results)==1):
-        data.append(results[0])
-    elif (len(results)>1):
-    # if there is MORE THAN ONE result, just print a note
-        print('more than one match')
-    else:
-    # if there are NO results, print a note
-        print('no matches')
+# for i in range(len(matches)):
+#     parallax_data.append([int(matches.iloc[[i]]['source_id'].values[0]), matches.iloc[[i]]['PARALLAX'].values[0], matches.iloc[[i]]['PARALLAX_ERROR'].values[0], 'GaiaDR2', 1, 'added by SpectreCell'])
+
 
 # add data to BDNYC database
-db.add_data(data, 'sources')
+# db.add_data(parallax_data, 'parallaxes')
+
+# db.search("added by spectrecell", 'parallaxes')
+# len(db.search("added by spectrecell", 'parallaxes', fetch=True))
+# db.inventory(204)
+
+# db.modify("DELETE FROM parallaxes WHERE comments='added by SpectreCell'")
+
+
+
+
+##################################################
+# Proper motions table
+##################################################
+
+
+# create new empty list to store data we want to add to database
+# propermotions_data = list()
+
+# append the column name (as it's written in the BDNYC database) to match on the appropriate column
+# propermotions_data.append(['source_id','proper_motion_ra', 'proper_motion_ra_unc','proper_motion_dec', 'proper_motion_dec_unc','publication_shortname', 'comments'])
+# print(propermotions_data)
+
+# for i in range(len(matches)):
+#     propermotions_data.append([matches.iloc[[i]]['source_id'].values[0], matches.iloc[[i]]['PMRA'].values[0], matches.iloc[[i]]['PMRA_ERROR'].values[0], matches.iloc[[i]]['PMDEC'].values[0], matches.iloc[[i]]['PMDEC_ERROR'].values[0],'GaiaDR2','added by SpectreCell'])
+
+
+# add data to BDNYC database
+# db.add_data(propermotions_data, 'proper_motions')
