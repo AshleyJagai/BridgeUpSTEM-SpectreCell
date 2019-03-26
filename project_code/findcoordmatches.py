@@ -8,14 +8,12 @@ import astropy.units as u
 import matplotlib.pyplot as plt
 import numpy as np
 
-
-
-
 # ===============================================
 # function definitions
 # ===============================================
 
 def matches_sortCSV(gaia_catalogue, db, save=False):
+
     # ===============================================
     # create new empty dataframes to store gaia data
     # ===============================================
@@ -42,15 +40,150 @@ def matches_sortCSV(gaia_catalogue, db, save=False):
         else:
             new_objects = new_objects.append(gaia_catalogue.loc[[i]])
 
-    if save==True:
-        saveCSVfiles(matches, new_objects, needs_review)
-    return matches, new_objects
+        if save==True:
+            saveCSVfiles(matches, new_objects, needs_review)
+        return matches, new_objects
 
 def saveCSVfiles(matches, new_objects, needs_review):
     matches.to_csv('matches.csv')
     new_objects.to_csv('new_objects.csv')
     needs_review.to_csv('needs_review.csv')
     print('matches, new_objects, and needs_review saved as CSV files.')
+
+def generateMatchtables(matches):
+    matches = pd.read_csv('matches.csv', index_col=0)
+
+    parallax_data = list()
+    propermotions_data = list()
+    Photometry_data = list()
+
+    parallax_data.append(['source_id','parallax', 'parallax_unc','publication_shortname', 'adopted','comments'])
+    propermotions_data.append(['source_id','proper_motion_ra', 'proper_motion_ra_unc','proper_motion_dec', 'proper_motion_dec_unc','publication_shortname', 'comments'])
+    Photometry_data.append(['source_id','band','magnitude','magnitude_unc','publication_shortname', 'comments'])
+
+    for i in range(len(matches)):
+        parallax_data.append([int(matches.iloc[[i]]['source_id'].values[0]),
+        matches.iloc[[i]]['PARALLAX'].values[0],
+        matches.iloc[[i]]['PARALLAX_ERROR'].values[0],
+        'GaiaDR2', 1, 'added by SpectreCell'])
+
+        propermotions_data.append([matches.iloc[[i]]['source_id'].values[0],
+        matches.iloc[[i]]['PMRA'].values[0],
+        matches.iloc[[i]]['PMRA_ERROR'].values[0],
+        matches.iloc[[i]]['PMDEC'].values[0],
+        matches.iloc[[i]]['PMDEC_ERROR'].values[0],
+        'GaiaDR2','added by SpectreCell'])
+
+        Photometry_data.append([matches.iloc[[i]]['source_id'].values[0], 'GaiaDR2_G', matches.iloc[[i]]['PHOT_G_MEAN_MAG'].values[0], matches.iloc[[i]]['PHOT_G_MEAN_MAG_ERROR'].values[0], 'GaiaDR2', 'added by SpectreCell'])
+
+        Photometry_data.append([matches.iloc[[i]]['source_id'].values[0], 'GaiaDR2_BP', matches.iloc[[i]]['PHOT_BP_MEAN_MAG'].values[0], matches.iloc[[i]]['PHOT_BP_MEAN_MAG_ERROR'].values[0], 'GaiaDR2', 'added by SpectreCell'])
+
+        Photometry_data.append([matches.iloc[[i]]['source_id'].values[0], 'GaiaDR2_RP', matches.iloc[[i]]['PHOT_RP_MEAN_MAG'].values[0], matches.iloc[[i]]['PHOT_RP_MEAN_MAG_ERROR'].values[0], 'GaiaDR2', 'added by SpectreCell'])
+    return matchParallax_data, matchPropermotions_data, matchPhotometry_data
+    # db.add_data(parallax_data, 'parallaxes')
+    # db.add_data(propermotions_data, 'proper_motions')
+    # db.add_data(propermotions_data, 'proper_motions')
+
+def generateNewObjtables(new_objects, db):
+    new_objects = pd.read_csv('new_objects.csv', index_col=0)
+    NOparallax_data = list()
+    NOpropermotions_data = list()
+    NOphotometry_data = list()
+
+
+    NOparallax_data.append(['source_id','parallax', 'parallax_unc','publication_shortname', 'adopted','comments'])
+    NOphotometry_data.append(['source_id','band', 'magnitude','magnitude_unc', 'publication_shortname', 'comments'])
+    NOpropermotions_data.append(['source_id','proper_motion_ra', 'proper_motion_ra_unc','proper_motion_dec', 'proper_motion_dec_unc','publication_shortname', 'comments'])
+
+    for i in range(len(new_objects)):
+        db_sourceid=db.search((new_objects.iloc[i]['RA'], new_objects.iloc[i]['DEC']), 'sources', radius=0.00278, fetch=True)['id'][0]
+        # parallax data
+        NOparallax_data.append([db_sourceid, new_objects.iloc[[i]]['PARALLAX'].values[0], new_objects.iloc[[i]]['PARALLAX_ERROR'].values[0], 'GaiaDR2', 1, 'added by SpectreCell'])
+        #proper_motions data
+        NOpropermotions_data.append([db_sourceid,
+        new_objects.iloc[[i]]['PMRA'].values[0],
+        new_objects.iloc[[i]]['PMRA_ERROR'].values[0],
+        new_objects.iloc[[i]]['PMDEC'].values[0],
+        new_objects.iloc[[i]]['PMDEC_ERROR'].values[0],
+        'GaiaDR2', 'added by SpectreCell'])
+        # photometry data
+        NOphotometry_data.append([db_sourceid, 'GaiaDR2_G',
+        new_objects.iloc[[i]]['PHOT_G_MEAN_MAG'].values[0],
+        new_objects.iloc[[i]]['PHOT_G_MEAN_MAG_ERROR'].values[0],
+        'GaiaDR2', 'added by SpectreCell'])
+
+        NOphotometry_data.append([db_sourceid, 'GaiaDR2_BP',
+        new_objects.iloc[[i]]['PHOT_BP_MEAN_MAG'].values[0],
+        new_objects.iloc[[i]]['PHOT_BP_MEAN_MAG_ERROR'].values[0],
+        'GaiaDR2', 'added by SpectreCell'])
+
+        NOphotometry_data.append([db_sourceid, 'GaiaDR2_RP',
+        new_objects.iloc[[i]]['PHOT_RP_MEAN_MAG'].values[0],
+        new_objects.iloc[[i]]['PHOT_RP_MEAN_MAG_ERROR'].values[0],
+        'GaiaDR2', 'added by SpectreCell'])
+
+        NOphotometry_data.append([db_sourceid, '2MASS_J',
+        new_objects.iloc[[i]]['TMASSJ'].values[0],
+        new_objects.iloc[[i]]['TMASSJERR'].values[0],
+        'GaiaDR2', 'added by SpectreCell'])
+
+        NOphotometry_data.append([db_sourceid, '2MASS_H',
+        new_objects.iloc[[i]]['TMASSH'].values[0],
+        new_objects.iloc[[i]]['TMASSHERR'].values[0],
+        'GaiaDR2', 'added by SpectreCell'])
+
+        NOphotometry_data.append([db_sourceid, '2MASS_K',
+        new_objects.iloc[[i]]['TMASSK'].values[0],
+        new_objects.iloc[[i]]['TMASSKERR'].values[0],
+        'GaiaDR2', 'added by SpectreCell'])
+
+        NOphotometry_data.append([db_sourceid, 'WISE_W1',
+        new_objects.iloc[[i]]['WISEW1'].values[0],
+        new_objects.iloc[[i]]['WISEW1ERR'].values[0],
+        'GaiaDR2', 'added by SpectreCell'])
+
+        NOphotometry_data.append([db_sourceid, 'WISE_W2',
+        new_objects.iloc[[i]]['WISEW2'].values[0],
+        new_objects.iloc[[i]]['WISEW2ERR'].values[0],
+        'GaiaDR2', 'added by SpectreCell'])
+
+        NOphotometry_data.append([db_sourceid, 'WISE_W3',
+        new_objects.iloc[[i]]['WISEW3'].values[0],
+        new_objects.iloc[[i]]['WISEW3ERR'].values[0],
+        'GaiaDR2', 'added by SpectreCell'])
+
+        NOphotometry_data.append([db_sourceid, 'GUNNG',
+        new_objects.iloc[[i]]['GUNNG'].values[0],
+        new_objects.iloc[[i]]['GUNNGERR'].values[0],
+        'GaiaDR2', 'added by SpectreCell'])
+
+        NOphotometry_data.append([db_sourceid, 'GUNNR',
+        new_objects.iloc[[i]]['GUNNR'].values[0],
+        new_objects.iloc[[i]]['GUNNRERR'].values[0],
+        'GaiaDR2', 'added by SpectreCell'])
+
+        NOphotometry_data.append([db_sourceid, 'GUNNI',
+        new_objects.iloc[[i]]['GUNNI'].values[0],
+        new_objects.iloc[[i]]['GUNNIERR'].values[0],
+        'GaiaDR2', 'added by SpectreCell'])
+
+        NOphotometry_data.append([db_sourceid, 'GUNNZ',
+        new_objects.iloc[[i]]['GUNNZ'].values[0],
+        new_objects.iloc[[i]]['GUNNZERR'].values[0],
+        'GaiaDR2', 'added by SpectreCell'])
+
+        NOphotometry_data.append([db_sourceid, 'GUNNY',
+        new_objects.iloc[[i]]['GUNNY'].values[0],
+        new_objects.iloc[[i]]['GUNNYERR'].values[0],
+        'GaiaDR2', 'added by SpectreCell'])
+    return newObjParallax_data, newObjPropermotions_data, newObjPhotometry_data
+
+    # db.add_data(Noparallax_data, 'parallaxes')
+    # db.add_data(NOpropermotions_data, 'proper_motions')
+    # db.add_data(NOpropermotions_data, 'proper_motions')
+    len(NOparallax_data)
+    len(NOpropermotions_data)
+    len(NOphotometry_data)
 
 def plotCoords(db_sources, matches, new_objects):
 
@@ -82,27 +215,21 @@ def plotCoords(db_sources, matches, new_objects):
     ax.scatter(matches_ra.radian, matches_dec.radian, color="#F24333", label='in BDNYC database and GAIA dataset')
     ax.scatter(new_objects_ra.radian, new_objects_dec.radian, color="#E3B505", label='in GAIA dataset')
     ax.legend(loc=4)
-
-
+# for i in range(len(new_objects)):
+#     results=db.search((new_objects['RA'][i],new_objects['DEC'][i], 'sources', ))
+#     matches['SOURCE_ID'].loc[i]=results['id'][0]
 
 ##################################################
 # CODE STARTS HERE
 ##################################################
 
-
 # ===============================================
 # import files needed
 # ===============================================
-
 # import gaia csv
-gaia_catalogue = pd.read_csv('gaia_data/all_catalog.csv')
+gaia_catalogue = pd.read_csv('/Users/ashley/Documents/BridgeUP-STEM-SpectreCell/GUCDScat.csv')
 # import bdnyc database
 db = astrodb.Database('BDNYCdb_practice/bdnycdev_copy.db')
-
-
-# load matches and new_objects csvs
-# matches = pd.read_csv('matches.csv', index_col=0)
-# new_objects = pd.read_csv('new_objects.csv', index_col=0)
 
 
 # ===============================================
@@ -112,95 +239,24 @@ db = astrodb.Database('BDNYCdb_practice/bdnycdev_copy.db')
 # list all from sources into format of pandas stored as new variable
 # db_sources = db.query('SELECT * FROM sources', fmt='pandas')
 
-
 # ===============================================
 # sort data into matches and not matches and save as new csv files
 # ===============================================
 
-# matches, new_objects= matches_sortCSV(gaia_catalogue, db)
-
-
+# matches, new_objects= matches_sortCSV(gaia_catalogue, db, save=True)
 # ===============================================
 # Workspace
 # ===============================================
 
-
-##################################################
-# Parallax table
-##################################################
-
 # create new empty list to store data we want to add to database
-parallax_data = list()
 
-# append the column name (as it's written in the BDNYC database) to match on the appropriate column
-parallax_data.append(['source_id','parallax', 'parallax_unc','publication_shortname', 'adopted','comments'])
-parallax_data
-
-for i in range(len(matches)):
-    parallax_data.append([int(matches.iloc[[i]]['source_id'].values[0]), matches.iloc[[i]]['PARALLAX'].values[0], matches.iloc[[i]]['PARALLAX_ERROR'].values[0], 'GaiaDR2', 1, 'added by SpectreCell'])
-
-parallax_data
-
-# add data to BDNYC database
 # db.search("added by SpectreCell", 'parallaxes')
 # len(db.search("added by spectrecell", 'parallaxes', fetch=True))
 # db.inventory(204)
 
-# db.modify("DELETE FROM proper_motions WHERE comments='added by SpectreCell'")
+# db.modify("DELETE FROM Photometry WHERE comments='added by SpectreCell'")
 
 
+len(db.query("SELECT * FROM photometry WHERE magnitude = -99999.0 AND comments ='added by SpectreCell'"))
 
-
-
-##################################################
-# Proper motions table
-##################################################
-
-
-# create new empty list to store data we want to add to database
-propermotions_data = list()
-
-# append the column name (as it's written in the BDNYC database) to match on the appropriate column
-propermotions_data.append(['source_id','proper_motion_ra', 'proper_motion_ra_unc','proper_motion_dec', 'proper_motion_dec_unc','publication_shortname', 'comments'])
-print(propermotions_data)
-
-for i in range(len(matches)):
-     propermotions_data.append([matches.iloc[[i]]['source_id'].values[0], matches.iloc[[i]]['PMRA'].values[0], matches.iloc[[i]]['PMRA_ERROR'].values[0], matches.iloc[[i]]['PMDEC'].values[0], matches.iloc[[i]]['PMDEC_ERROR'].values[0],'GaiaDR2','added by SpectreCell'])
-propermotions_data
-
-# add data to BDNYC database
-db.add_data(propermotions_data, 'proper_motions')
-
-
-matches.columns
-
-##################################################
-# Photomerty table
-##################################################
-
-# create new empty list to store data we want to add to databas
-Photometry_dataBP = list()
-# append the column name (as it's written in the BDNYC database) to match on the appropriate column
-Photometry_dataBP.append(['source_id','magnitude','magnitude_unc','publication_shortname','band', 'comments'])
-print(Photometry_dataBP)
-for i in range(len(matches)):
-     Photometry_dataBP.append([matches.iloc[[i]]['source_id'].values[0],matches.iloc[[i]]['PHOT_BP_MEAN_MAG'].values[0],matches.iloc[[i]]['PHOT_BP_MEAN_MAG_ERROR'].values[0],'GaiaDR2_BP','added by SpectreCell'])
-len(Photometry_dataBP)
-
-Photometry_dataG = list()
-Photometry_dataG.append(['source_id','magnitude','magnitude_unc','publication_shortname','band', 'comments'])
-print(Photometry_dataG)
-for i in range(len(matches)):
-     Photometry_dataG.append([matches.iloc[[i]]['source_id'].values[0],matches.iloc[[i]]['PHOT_G_MEAN_MAG'].values[0],matches.iloc[[i]]['PHOT_G_MEAN_MAG_ERROR'].values[0],'GaiaDR2_G','added by SpectreCell'])
-len(Photometry_dataG)
-
-Photometry_dataRP = list()
-Photometry_dataRP.append(['source_id','magnitude','magnitude_unc','publication_shortname','band', 'comments'])
-print(Photometry_dataRP)
-for i in range(len(matches)):
-    Photometry_dataRP.append([matches.iloc[[i]]['source_id'].values[0],  matches.iloc[[i]]['PHOT_RP_MEAN_MAG'].values[0],matches.iloc[[i]]['PHOT_RP_MEAN_MAG_ERROR'].values[0],'GaiaDR2_RP','added by SpectreCell'])
-len(Photometry_dataRP)
-
-
-# add data to BDNYC database
-# db.add_data(Photomerty_data, 'Photomerty')
+db.modify("DELETE FROM photometry WHERE magnitude = -99999.0 AND comments ='added by SpectreCell'")
