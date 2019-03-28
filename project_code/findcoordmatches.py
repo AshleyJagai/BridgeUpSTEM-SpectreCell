@@ -51,7 +51,6 @@ def saveCSVfiles(matches, new_objects, needs_review):
     print('matches, new_objects, and needs_review saved as CSV files.')
 
 def generateMatchtables(matches):
-    matches = pd.read_csv('matches.csv', index_col=0)
 
     parallax_data = list()
     propermotions_data = list()
@@ -79,13 +78,13 @@ def generateMatchtables(matches):
         Photometry_data.append([matches.iloc[[i]]['source_id'].values[0], 'GaiaDR2_BP', matches.iloc[[i]]['PHOT_BP_MEAN_MAG'].values[0], matches.iloc[[i]]['PHOT_BP_MEAN_MAG_ERROR'].values[0], 'GaiaDR2', 'added by SpectreCell'])
 
         Photometry_data.append([matches.iloc[[i]]['source_id'].values[0], 'GaiaDR2_RP', matches.iloc[[i]]['PHOT_RP_MEAN_MAG'].values[0], matches.iloc[[i]]['PHOT_RP_MEAN_MAG_ERROR'].values[0], 'GaiaDR2', 'added by SpectreCell'])
-    return matchParallax_data, matchPropermotions_data, matchPhotometry_data
+
+    return parallax_data, propermotions_data, Photometry_data
     # db.add_data(parallax_data, 'parallaxes')
     # db.add_data(propermotions_data, 'proper_motions')
     # db.add_data(propermotions_data, 'proper_motions')
 
-def generateNewObjtables(new_objects, db):
-    new_objects = pd.read_csv('new_objects.csv', index_col=0)
+def generateNewObjtables(new_objects, db, addSourceTable=False):
     NOparallax_data = list()
     NOpropermotions_data = list()
     NOphotometry_data = list()
@@ -176,7 +175,7 @@ def generateNewObjtables(new_objects, db):
         new_objects.iloc[[i]]['GUNNY'].values[0],
         new_objects.iloc[[i]]['GUNNYERR'].values[0],
         'GaiaDR2', 'added by SpectreCell'])
-    return newObjParallax_data, newObjPropermotions_data, newObjPhotometry_data
+    return NOparallax_data, NOpropermotions_data, NOphotometry_data
 
     # db.add_data(Noparallax_data, 'parallaxes')
     # db.add_data(NOpropermotions_data, 'proper_motions')
@@ -215,14 +214,13 @@ def plotCoords(db_sources, matches, new_objects):
     ax.scatter(matches_ra.radian, matches_dec.radian, color="#F24333", label='in BDNYC database and GAIA dataset')
     ax.scatter(new_objects_ra.radian, new_objects_dec.radian, color="#E3B505", label='in GAIA dataset')
     ax.legend(loc=4)
-# for i in range(len(new_objects)):
-#     results=db.search((new_objects['RA'][i],new_objects['DEC'][i], 'sources', ))
-#     matches['SOURCE_ID'].loc[i]=results['id'][0]
 
 ##################################################
 # CODE STARTS HERE
 ##################################################
 
+matches = pd.read_csv('matches.csv', index_col=0)
+new_objects = pd.read_csv('new_objects.csv', index_col=0)
 # ===============================================
 # import files needed
 # ===============================================
@@ -230,14 +228,6 @@ def plotCoords(db_sources, matches, new_objects):
 gaia_catalogue = pd.read_csv('/Users/ashley/Documents/BridgeUP-STEM-SpectreCell/GUCDScat.csv')
 # import bdnyc database
 db = astrodb.Database('BDNYCdb_practice/bdnycdev_copy.db')
-
-
-# ===============================================
-# variables needed
-# ===============================================
-
-# list all from sources into format of pandas stored as new variable
-# db_sources = db.query('SELECT * FROM sources', fmt='pandas')
 
 # ===============================================
 # sort data into matches and not matches and save as new csv files
@@ -248,6 +238,10 @@ db = astrodb.Database('BDNYCdb_practice/bdnycdev_copy.db')
 # Workspace
 # ===============================================
 
+ Parallax_data, Propermotions_data, Photometry_data = generateMatchtables(matches)
+ len(Parallax_data)
+NOparallax_data, NOpropermotions_data, NOphotometry_data= generateNewObjtables(new_objects, db)
+ len(NOparallax_data)
 # create new empty list to store data we want to add to database
 
 # db.search("added by SpectreCell", 'parallaxes')
@@ -256,7 +250,6 @@ db = astrodb.Database('BDNYCdb_practice/bdnycdev_copy.db')
 
 # db.modify("DELETE FROM Photometry WHERE comments='added by SpectreCell'")
 
-
-len(db.query("SELECT * FROM photometry WHERE magnitude = -99999.0 AND comments ='added by SpectreCell'"))
+ len(db.query("SELECT * FROM photometry WHERE magnitude = -99999.0 AND comments='added by SpectreCell'"))
 
 db.modify("DELETE FROM photometry WHERE magnitude = -99999.0 AND comments ='added by SpectreCell'")
